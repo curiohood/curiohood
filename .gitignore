@@ -1,0 +1,8 @@
+.workbuddy/
+.tmp/
+__pycache__/
+*.pyc
+.DS_Store
+*.zip
+*.genie
+/*.md

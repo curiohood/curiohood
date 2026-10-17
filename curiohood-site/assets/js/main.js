@@ -48,6 +48,76 @@
     items.forEach(function (el) { el.classList.add("is-in"); });
   }
 
+  // Hero carousel — auto-play, arrows, dots, keyboard, touch
+  var carousel = document.querySelector(".hero-carousel");
+  if (carousel) {
+    var slides = Array.prototype.slice.call(carousel.querySelectorAll(".slide"));
+    var dots = Array.prototype.slice.call(carousel.querySelectorAll(".carousel-dot"));
+    var prevBtn = carousel.querySelector(".carousel-arrow.prev");
+    var nextBtn = carousel.querySelector(".carousel-arrow.next");
+    var idx = 0;
+    var timer = null;
+    var DELAY = 6500;
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    slides.forEach(function (s, i) { if (s.classList.contains("is-active")) { idx = i; } });
+
+    function goTo(n) {
+      if (!slides.length) { return; }
+      idx = (n + slides.length) % slides.length;
+      slides.forEach(function (s, i) { s.classList.toggle("is-active", i === idx); });
+      dots.forEach(function (d, i) {
+        d.classList.toggle("is-active", i === idx);
+        d.setAttribute("aria-selected", i === idx ? "true" : "false");
+      });
+      carousel.setAttribute("data-tone", slides[idx].getAttribute("data-tone") || "light");
+    }
+
+    function play() {
+      if (reduce || slides.length < 2) { return; }
+      stop();
+      timer = window.setInterval(function () { goTo(idx + 1); }, DELAY);
+    }
+    function stop() {
+      if (timer) { window.clearInterval(timer); timer = null; }
+    }
+
+    if (prevBtn) { prevBtn.addEventListener("click", function () { goTo(idx - 1); play(); }); }
+    if (nextBtn) { nextBtn.addEventListener("click", function () { goTo(idx + 1); play(); }); }
+    dots.forEach(function (d, i) {
+      d.addEventListener("click", function () { goTo(i); play(); });
+    });
+
+    carousel.addEventListener("mouseenter", stop);
+    carousel.addEventListener("mouseleave", play);
+    carousel.addEventListener("focusin", stop);
+    carousel.addEventListener("focusout", play);
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) { stop(); } else { play(); }
+    });
+
+    carousel.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") { goTo(idx - 1); play(); }
+      if (e.key === "ArrowRight") { goTo(idx + 1); play(); }
+    });
+
+    var startX = null;
+    carousel.addEventListener("touchstart", function (e) {
+      startX = e.touches[0].clientX;
+      stop();
+    }, { passive: true });
+    carousel.addEventListener("touchend", function (e) {
+      if (startX === null) { return; }
+      var dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 44) { goTo(dx < 0 ? idx + 1 : idx - 1); }
+      startX = null;
+      play();
+    }, { passive: true });
+
+    goTo(idx);
+    play();
+  }
+
   // Newsletter (demo: no backend wired yet)
   var form = document.querySelector(".nl-form");
   if (form) {

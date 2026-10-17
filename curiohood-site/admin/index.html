@@ -24,9 +24,24 @@
 <body>
 <div class="fallback" id="fallback">
   <h1>后台加载中</h1>
-  <p>如果长时间停在这一页，说明后台脚本没有加载成功。</p>
-  <p>请检查网络后刷新，或联系维护者。</p>
+  <p>首次打开可能需要十几秒，请稍候。</p>
+  <p>如果超过一分钟仍停留在此页，请按 Cmd+Shift+R 强制刷新，或检查网络。</p>
 </div>
 <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+<script>
+  (function () {
+    var tries = 0;
+    var timer = setInterval(function () {
+      tries += 1;
+      if (window.CMS || window.Sveltia) {
+        var f = document.getElementById("fallback");
+        if (f) { f.style.display = "none"; }
+        clearInterval(timer);
+      } else if (tries > 50) {
+        clearInterval(timer);
+      }
+    }, 300);
+  })();
+</script>
 </body>
 </html>

@@ -26,10 +26,10 @@ CONTENT = ROOT / "content"
 DATA = ROOT / "posts.json"
 
 ART_GRADIENT = {
-    "art-1": "linear-gradient(140deg,#E1D2B8 0%,#C08F5A 48%,#6E4B2E 100%)",
-    "art-2": "linear-gradient(140deg,#DED0C4 0%,#A9837A 48%,#5E4136 100%)",
-    "art-3": "linear-gradient(140deg,#DCE0D0 0%,#93A585 48%,#2E4C41 100%)",
-    "art-4": "linear-gradient(140deg,#EBDCC0 0%,#C9973F 48%,#8E4020 100%)",
+    "art-1": "linear-gradient(140deg,#F6F48F 0%,#EDEA54 48%,#C9C63C 100%)",
+    "art-2": "linear-gradient(140deg,#F1EFE2 0%,#DDDBC8 48%,#B9B7A2 100%)",
+    "art-3": "linear-gradient(140deg,#EDEC9E 0%,#DDDA76 48%,#B7B44E 100%)",
+    "art-4": "linear-gradient(140deg,#3C3C36 0%,#23231F 48%,#111111 100%)",
 }
 
 
@@ -278,23 +278,53 @@ def build_column_page(data: dict, key: str) -> None:
     (SITE / col["file"]).write_text(html, encoding="utf-8")
 
 
-def build_home_latest(data: dict) -> None:
+def build_home_hero(data: dict) -> None:
+    """重建首页头条轮播（最新 3 篇）。"""
     path = SITE / "index.html"
     html = path.read_text(encoding="utf-8")
-    latest = sorted_posts(data)[:3]
-    block = "\n".join(card(p) for p in latest)
-    pattern = re.compile(r"(<!-- LATEST:START -->).*?(<!-- LATEST:END -->)", re.S)
-    replacement = (
-        "<!-- LATEST:START -->\n"
-        '      <div class="grid grid-3">\n'
-        + "\n".join("        " + ln for c in latest for ln in card(c).splitlines())
-        + "\n      </div>\n      "
-        + "<!-- LATEST:END -->"
-    )
+    pattern = re.compile(r"(<!-- HERO:START -->).*?(<!-- HERO:END -->)", re.S)
     if not pattern.search(html):
-        print("  ! 首页缺少 LATEST 标记，跳过首页更新")
+        print("  ! 首页缺少 HERO 标记，跳过轮播更新")
         return
-    path.write_text(pattern.sub(replacement, html), encoding="utf-8")
+
+    latest = sorted_posts(data)[:3]
+    parts = []
+    tones = []
+    for i, p in enumerate(latest):
+        col = data["columns"][p["column"]]
+        tone = p.get("tone") or ("dark" if p["art"] == "art-4" else "light")
+        tones.append(tone)
+        active = " is-active" if i == 0 else ""
+        title = p.get("headline") or p["title"]
+        parts.append(f"""    <div class="slide{active}" data-tone="{tone}">
+      <div class="slide-art" style="background:{ART_GRADIENT[p['art']]};"></div>
+      <div class="slide-content">
+        <span class="slide-kicker">{col['name']} · {p['tag']}</span>
+        <h2 class="slide-title">{title}</h2>
+        <p class="slide-sub">{p['lede']}</p>
+        <p class="slide-cta"><a class="btn" href="articles/{p['slug']}.html">阅读全文</a></p>
+      </div>
+      <a class="slide-link" href="articles/{p['slug']}.html" aria-label="阅读{title}"></a>
+    </div>""")
+
+    first_tone = tones[0] if tones else "light"
+
+    block = (
+        "<!-- HERO:START -->\n"
+        f'  <section class="hero-carousel" id="top" data-tone="{first_tone}" aria-label="头条">\n'
+        + "\n\n".join(parts)
+        + "\n\n"
+        '    <button class="carousel-arrow prev" aria-label="上一条">&#8592;</button>\n'
+        '    <button class="carousel-arrow next" aria-label="下一条">&#8594;</button>\n'
+        '    <div class="carousel-dots" role="tablist" aria-label="头条切换">\n'
+        + "\n".join(
+            f'      <button class="carousel-dot{" is-active" if i == 0 else ""}" aria-label="第 {i+1} 条"></button>'
+            for i in range(len(latest))
+        )
+        + "\n    </div>\n  </section>\n  "
+        + "<!-- HERO:END -->"
+    )
+    path.write_text(pattern.sub(lambda m: block, html), encoding="utf-8")
 
 
 def build_sitemap(data: dict) -> None:
@@ -438,8 +468,8 @@ def rebuild() -> None:
     for key in data["columns"]:
         build_column_page(data, key)
         print(f"  + {data['columns'][key]['file']}")
-    build_home_latest(data)
-    print("  + index.html（最新区）")
+    build_home_hero(data)
+    print("  + index.html（头条轮播）")
     for post in data["posts"]:
         if not post.get("existing"):
             build_article(data, post)

@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_ACCOUNT/curiohood
+  repo: curiohood/curiohood
   branch: main
   auth_type: pkce
-  app_id: YOUR_GITHUB_OAUTH_CLIENT_ID
+  app_id: Ov23liHOz8DXhrV8VM0b
 
 site_url: https://www.curiohoodtravel.com
 display_url: https://www.curiohoodtravel.com

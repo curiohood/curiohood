@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>CurioHood 内容后台</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "PingFang SC", "Hiragino Sans GB", -apple-system, sans-serif;
+    background: #FAF7F2;
+    color: #1E1C18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .fallback { max-width: 520px; padding: 40px 28px; text-align: center; }
+  .fallback h1 { font-size: 22px; font-weight: 600; margin: 0 0 12px; }
+  .fallback p { font-size: 14px; line-height: 1.8; color: #847B6D; margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<div class="fallback" id="fallback">
+  <h1>后台加载中</h1>
+  <p>如果长时间停在这一页，说明后台脚本没有加载成功。</p>
+  <p>请检查网络后刷新，或联系维护者。</p>
+</div>
+<script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
+</body>
+</html>

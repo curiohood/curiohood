@@ -1,0 +1,154 @@
+{
+  "site": {
+    "base": "https://www.curiohoodtravel.com",
+    "domain": "curiohoodtravel.com",
+    "author": "CurioHood 编辑部",
+    "brand": "CurioHood"
+  },
+  "columns": {
+    "city-guide": {
+      "name": "城市指南",
+      "file": "city-guide.html",
+      "kicker": "Column 01",
+      "title": "城市指南",
+      "lede": "我们不按景点排队，而是按一天里的光线分段。清晨的菜市场、正午躲进去的咖啡馆、黄昏的河边——每个 hour 只安排一件事，走得完，也记得住。",
+      "nl_title": "下一座城市，由你投票",
+      "nl_text": "订阅后回复你想看的城市，我们会把它排进下一期的选题表。"
+    },
+    "stay": {
+      "name": "酒店观察",
+      "file": "stay.html",
+      "kicker": "Column 02",
+      "title": "酒店观察",
+      "lede": "我们不住遍所有房间，只写值得为它改行程的那几间。关注的也不是星级，而是推开窗那一刻的光、走廊里的气味，和前台把房卡递给你时的语速。",
+      "nl_title": "每月一封，只讲一个地方",
+      "nl_text": "新酒店实测、老酒店回访，以及那些我们自掏腰包住过才敢写的房间。"
+    },
+    "lifestyle": {
+      "name": "生活方式",
+      "file": "lifestyle.html",
+      "kicker": "Column 03",
+      "title": "生活方式",
+      "lede": "看过的地方终究会忘记，带回来的东西不会。这个栏目记录我们做过的物件、印过的纸张，和把陌生人聚到一起的那些下午。",
+      "nl_title": "新刊与新品，第一时间告诉你",
+      "nl_text": "ZINE 印量有限，订阅者优先。同时会收到线下活动的开放报名通知。"
+    }
+  },
+  "posts": [
+    {
+      "slug": "hotel-scent",
+      "title": "酒店的气味记忆：为什么你记得住那间房",
+      "headline": "酒店的气味记忆",
+      "lede": "为什么你记得住那间房。第 1 期安缦，第 2 期朗廷。",
+      "column": "stay",
+      "date": "2026-10-08",
+      "tag": "Scent Series",
+      "art": "art-2",
+      "read": "8 分钟阅读",
+      "excerpt": "从安缦的檀香到朗廷的姜花，一家酒店最持久的签名，往往不是大堂，而是味道。",
+      "existing": true
+    },
+    {
+      "slug": "bangkok-yellow-hour",
+      "title": "BANGKOK YELLOW HOUR：4 天 5 晚，走一条不赶时间的路线",
+      "headline": "BANGKOK YELLOW HOUR",
+      "lede": "4 天 5 晚，走一条不赶时间的路线。我们把一天切成五个 hour，只挑光线最好的那一段出门。",
+      "column": "city-guide",
+      "date": "2026-10-02",
+      "tag": "Bangkok",
+      "art": "art-1",
+      "read": "12 分钟阅读",
+      "excerpt": "从 COMO Metropolitan 的中庭开始，到湄南河边的黄昏收尾。五个 hour，一条路线，一本 A5 的纸质 ZINE。",
+      "existing": true
+    },
+    {
+      "slug": "wanning-tent-season",
+      "title": "万宁海崖帐篷季：睡在风里，听一整夜的浪",
+      "headline": "万宁海崖帐篷季",
+      "lede": "睡在风里，听一整夜的浪。观海天际舱、毛毛虫帐篷，和台风过境后的海崖。",
+      "column": "stay",
+      "date": "2026-09-26",
+      "tag": "Wanning",
+      "art": "art-3",
+      "read": "6 分钟阅读",
+      "excerpt": "观海天际舱、毛毛虫帐篷、台风过境后的海崖。一份关于“住得野一点”的实地记录。",
+      "existing": true
+    },
+    {
+      "slug": "mans-holiday",
+      "title": "男子假期：一个产品系列，和它背后的八小时",
+      "headline": "男子假期",
+      "lede": "一个产品系列，和它背后的八小时。三件东西，一次短假，把它做成能带走的。",
+      "column": "lifestyle",
+      "date": "2026-09-12",
+      "tag": "CurioHood Lifestyle",
+      "art": "art-4",
+      "read": "5 分钟阅读",
+      "excerpt": "尼龙托特、万宁 ZINE、UPRO 联名岛黄泳裤。我们把一次短假，做成了可以带走的三件东西。",
+      "existing": true
+    },
+    {
+      "slug": "shanghai-plane-tree-hour",
+      "title": "上海梧桐小时：从武康路走到苏州河",
+      "headline": "上海梧桐小时：从武康路走到苏州河",
+      "lede": "一条 6 公里的步行路线，穿过四个年代的建筑，和十一家还开着的老店。",
+      "column": "city-guide",
+      "date": "2026-10-17",
+      "tag": "Shanghai",
+      "art": "art-3",
+      "read": "9 分钟阅读",
+      "excerpt": "从武康路的转角开始，沿乌鲁木齐路北上，到苏州河边收尾。这份路线只安排五站，留足坐下来的时间。",
+      "existing": false
+    }
+  ],
+  "soon": {
+    "city-guide": [
+      {
+        "tag": "Kyoto",
+        "art": "art-2",
+        "title": "京都的蓝小时：寺庙开门前的那四十分钟",
+        "excerpt": "避开人潮的唯一办法，是比旅行团早起两小时。一份清晨寺院巡礼的时刻表。",
+        "meta": "即将发布 · 2026.12"
+      },
+      {
+        "tag": "Chiang Mai",
+        "art": "art-4",
+        "title": "清迈的慢小时：在古城里什么都不做的三天",
+        "excerpt": "一间不带电视的客房、五家步行可达的早餐店，和每天下午三点的一场雨。",
+        "meta": "即将发布 · 2027.01"
+      }
+    ],
+    "stay": [
+      {
+        "tag": "Suzhou",
+        "art": "art-1",
+        "title": "音昱水中天：在阳澄湖边，把两天过成一周",
+        "excerpt": "八个动作、2 天 1 晚、48 小时。一次不做计划的疗愈日程，值得单独写一篇。",
+        "meta": "即将发布 · 2026.11"
+      },
+      {
+        "tag": "Bangkok",
+        "art": "art-4",
+        "title": "COMO Metropolitan Bangkok：中庭那棵树下的早餐",
+        "excerpt": "曼谷指南里住过三晚的酒店，单独拆出来讲它的光、动线与早餐节奏。",
+        "meta": "即将发布 · 2026.11"
+      }
+    ],
+    "lifestyle": [
+      {
+        "tag": "Offline",
+        "art": "art-3",
+        "title": "城市瑜伽：把屏幕里的内容，搬到草地上",
+        "excerpt": "沪苏两地的周末场次，每场 20 人，场地方赞助。一次关于线下体验的尝试。",
+        "meta": "即将发布 · 2026.11"
+      },
+      {
+        "tag": "Open Call",
+        "art": "art-2",
+        "title": "投稿开放：讲一个你住过的房间",
+        "excerpt": "不需要专业摄影，只需要一段具体的描述。我们会挑出十篇，印进下一本 ZINE。",
+        "meta": "长期开放"
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_ACCOUNT/curiohood
+  branch: main
+  auth_type: pkce
+  app_id: YOUR_GITHUB_OAUTH_CLIENT_ID
+
+site_url: https://www.curiohoodtravel.com
+display_url: https://www.curiohoodtravel.com
+logo_url: https://www.curiohoodtravel.com/assets/img/logo.png
+
+locale: zh_Hans
+
+media_folder: "curiohood-site/assets/img"
+public_folder: "/assets/img"
+
+publish_mode: simple
+
+collections:
+  - name: posts
+    label: 文章
+    label_singular: 文章
+    folder: "curiohood-src/content"
+    create: true
+    delete: true
+    slug: "{{fields.slug}}"
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - label: 标题
+        name: title
+        widget: string
+        hint: 显示在浏览器标签和分享卡片上
+
+      - label: 页面大标题
+        name: headline
+        widget: string
+        required: false
+        hint: 文章页上那个超大字。不填就用上面的标题
+
+      - label: 网址短名
+        name: slug
+        widget: string
+        hint: 只能用小写字母、数字和连字符，例如 kyoto-blue-hour。这会成为文章网址的一部分，想好再填
+        pattern:
+          - "^[a-z0-9-]+$"
+          - 只能用小写字母、数字和连字符
+
+      - label: 栏目
+        name: column
+        widget: select
+        options:
+          - { label: 城市指南, value: city-guide }
+          - { label: 酒店观察, value: stay }
+          - { label: 生活方式, value: lifestyle }
+        default: city-guide
+
+      - label: 发布日期
+        name: date
+        widget: datetime
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+
+      - label: 卡片标签
+        name: tag
+        widget: string
+        hint: 卡片左上角的小标签，例如 Kyoto / Suzhou / Bangkok
+
+      - label: 封面配色
+        name: art
+        widget: select
+        options:
+          - { label: 沙金, value: art-1 }
+          - { label: 陶粉, value: art-2 }
+          - { label: 苔绿, value: art-3 }
+          - { label: 暖橙, value: art-4 }
+        default: art-1
+
+      - label: 阅读时长
+        name: read
+        widget: string
+        default: 6 分钟阅读
+
+      - label: 导语
+        name: lede
+        widget: text
+        hint: 标题下面那句大字，一两句话
+
+      - label: 卡片摘要
+        name: excerpt
+        widget: text
+        hint: 列表卡片上的两三行简介，30 字左右最好

@@ -370,6 +370,13 @@ a { color: inherit; text-decoration: none; }
   content: ""; position: absolute; inset: 0;
   background: repeating-linear-gradient(58deg, rgba(255,255,255,.06) 0 2px, transparent 2px 10px);
 }
+/* 真实封面图：铺满卡片，去掉色块纹理 */
+.card-art.has-img img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; transition: transform .55s ease;
+}
+.card:hover .card-art.has-img img { transform: scale(1.035); }
+.card-art.has-img::after { display: none; }
 .card-tag {
   position: absolute; top: 14px; left: 14px; z-index: 2;
   background: var(--lemon); color: #111;
@@ -458,6 +465,13 @@ a { color: inherit; text-decoration: none; }
 .article-body ul { margin: 0 0 26px; padding-left: 20px; }
 .article-body li { margin-bottom: 10px; color: var(--ink-soft); font-size: 16.5px; }
 .article-body a { color: var(--clay); border-bottom: 1px solid var(--line-strong); }
+.article-body figure { margin: 36px 0; }
+/* 竖构图配图：收窄居中，避免满栏后过高、打断阅读节奏 */
+.article-body figure.fig-portrait { max-width: min(560px, 100%); margin-left: auto; margin-right: auto; }
+.article-body figure.fig-portrait img { width: 100%; }
+.article-body figure img { display: block; width: 100%; height: auto; border-radius: 2px; }
+.article-body figcaption { margin-top: 11px; font-size: 13px; letter-spacing: .05em; color: var(--ink-soft); }
+.article-body figcaption::before { content: ""; display: inline-block; width: 20px; border-top: 2px solid var(--accent, #B58F1E); vertical-align: middle; margin-right: 10px; }
 
 .pull-fact {
   background: var(--surface-warm); border: 1px solid var(--line);
@@ -582,3 +596,35 @@ a { color: inherit; text-decoration: none; }
   * { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Zine flipbook (Yellow Hour Bangkok) ---------- */
+.feature-media > img.feature-cover {
+  position: absolute; inset: 0; z-index: 1;
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.feature-media::before { z-index: 2; }
+.feature-media .feature-media-note { color: rgba(255,253,242,.94); text-shadow: 0 1px 10px rgba(0,0,0,.45); }
+.zine-viewer {
+  background: #17140F;
+  padding: clamp(28px, 4.5vw, 64px) 0 clamp(20px, 3vw, 36px);
+  margin: clamp(36px, 5vw, 56px) 0 0;
+}
+.zine-frame { max-width: 1280px; margin: 0 auto; padding: 0 var(--gutter); }
+#zine-book { margin: 0 auto; }
+#zine-book .zp img { width: 100%; height: auto; display: block; pointer-events: none; user-select: none; }
+.zine-bar {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  max-width: 1280px; margin: 22px auto 0; padding: 0 var(--gutter);
+  color: rgba(255,253,242,.72); font-size: 12px; letter-spacing: .16em;
+}
+.zine-bar button {
+  background: transparent; border: 1px solid rgba(255,253,242,.32); color: #FFFDF2;
+  padding: 10px 20px; cursor: pointer; font-size: 12px; letter-spacing: .14em;
+  transition: border-color .2s ease, background .2s ease;
+}
+.zine-bar button:hover { border-color: #FFFDF2; background: rgba(255,255,255,.08); }
+.zine-hint {
+  text-align: center; color: rgba(255,253,242,.42);
+  font-size: 11.5px; letter-spacing: .18em; margin: 16px 0 0;
+}
+.stf__parent { -webkit-touch-callout: none; }

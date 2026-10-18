@@ -6,3 +6,5 @@ __pycache__/
 *.zip
 *.genie
 /*.md
+.cloudflare-credentials
+.wrangler/

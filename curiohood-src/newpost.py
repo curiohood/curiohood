@@ -153,7 +153,7 @@ TEMPLATE_ARTICLE = """<!DOCTYPE html>
     </div>
 
     <div class="wrap">
-      <div class="article-hero-art" style="background:{{GRADIENT}};"></div>
+      <div class="article-hero-art" style="{{HERO_STYLE}};"></div>
     </div>
 
     <div class="wrap-narrow article-body">
@@ -195,9 +195,28 @@ def pretty_date(d: str) -> str:
     return d.replace("-", ".")
 
 
+def hero_style(post: dict, prefix: str = "") -> str:
+    """有 hero/cover 图就用图，否则退回渐变色块。"""
+    hero = post.get("hero") or post.get("cover")
+    if hero:
+        pos = post.get("hero_pos") or "center 42%"
+        return f"background:url('{prefix}{hero}') {pos}/cover no-repeat"
+    return "background:" + ART_GRADIENT.get(post["art"], ART_GRADIENT["art-1"])
+
+
+def card_art(post: dict, prefix: str = "") -> str:
+    """封面图优先；没有图才退回渐变色块。"""
+    cover = post.get("cover")
+    if cover:
+        return (f'<div class="card-art has-img">'
+                f'<img src="{prefix}{cover}" alt="{post["title"]}" loading="lazy">'
+                f'<span class="card-tag">{post["tag"]}</span></div>')
+    return f'<div class="card-art {post["art"]}"><span class="card-tag">{post["tag"]}</span></div>'
+
+
 def card(post: dict, href_prefix: str = "") -> str:
     return f"""<a class="card reveal" href="{href_prefix}articles/{post['slug']}.html">
-  <div class="card-art {post['art']}"><span class="card-tag">{post['tag']}</span></div>
+  {card_art(post, href_prefix)}
   <h3>{post['title']}</h3>
   <p>{post['excerpt']}</p>
   <div class="card-meta">{pretty_date(post['date'])} · {post['read']}</div>
@@ -296,8 +315,12 @@ def build_home_hero(data: dict) -> None:
         tones.append(tone)
         active = " is-active" if i == 0 else ""
         title = p.get("headline") or p["title"]
+        if p.get("cover"):
+            art = f"background:url('{p['cover']}') center 45%/cover no-repeat;"
+        else:
+            art = f"background:{ART_GRADIENT[p['art']]};"
         parts.append(f"""    <div class="slide{active}" data-tone="{tone}">
-      <div class="slide-art" style="background:{ART_GRADIENT[p['art']]};"></div>
+      <div class="slide-art" style="{art}"></div>
       <div class="slide-content">
         <span class="slide-kicker">{col['name']} · {p['tag']}</span>
         <h2 class="slide-title">{title}</h2>
@@ -397,6 +420,10 @@ def sync_from_md(data: dict) -> dict:
             "excerpt": meta.get("excerpt", ""),
             "existing": False,
         }
+        # 图片字段（可选）：cover 用于卡片/首页轮播，hero 用于文章页大图
+        for opt in ("cover", "hero", "hero_pos"):
+            if meta.get(opt):
+                record[opt] = meta[opt]
         hit = next((p for p in data["posts"] if p["slug"] == slug), None)
         if hit:
             hit.update(record)
@@ -446,7 +473,7 @@ def build_article(data: dict, post: dict) -> None:
         AUTHOR=data["site"]["author"],
         DATE=pretty_date(post["date"]),
         READ=post["read"],
-        GRADIENT=ART_GRADIENT.get(post["art"], ART_GRADIENT["art-1"]),
+        HERO_STYLE=hero_style(post, "../"),
         BODY=body_html,
         COLUMN_NAME=col["name"],
         COLUMN_FILE=col["file"],

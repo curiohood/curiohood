@@ -361,7 +361,7 @@ def build_sitemap(data: dict) -> None:
         ("/stay.html", date.today().isoformat(), "0.9"),
         ("/lifestyle.html", date.today().isoformat(), "0.9"),
         ("/about.html", date.today().isoformat(), "0.6"),
-        ("/zine/yellow-hour-bangkok.html", date.today().isoformat(), "0.7"),
+        ("/zine/mens-wanning-holiday.html", date.today().isoformat(), "0.7"),
     ]:
         rows.append((loc, lm, pri, "weekly" if pri == "1.0" else "monthly"))
     for p in sorted_posts(data):

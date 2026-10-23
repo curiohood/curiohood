@@ -124,13 +124,13 @@
       "column": "stay",
       "date": "2026-10-18",
       "tag": "Kim Jones",
-      "art": "art-2",
+      "art": "art-1",
       "read": "6 分钟阅读",
       "excerpt": "Kim Jones 把攒了多年的安缦行李牌，做成安缦首个设计师系列。35 件，全解析。",
       "cover": "assets/img/kimjones/cover.jpg",
       "tone": "dark",
       "title_color": "#F0EE5A",
-      "existing": true
+      "existing": false
     },
     {
       "slug": "unseen-luxury",
@@ -163,6 +163,23 @@
       "hero": "assets/img/yellow-hour-goods/hero.jpg",
       "hero_pos": "center 50%",
       "tone": "dark",
+      "existing": false
+    },
+    {
+      "slug": "island-boy-hop",
+      "title": "CurioHood × 翻咔联合企划：Island Boy Hop，男生的海岛假期长这样",
+      "headline": "男子假期，共享热夏",
+      "lede": "CurioHood 携手翻咔推出夏日限定影像企划「Island Boy Hop 男子假期，共享热夏」，在万宁的海岸线上，记录男生松弛、鲜活、无拘无束的度假样子。",
+      "column": "lifestyle",
+      "date": "2026-10-15",
+      "tag": "Island Boy Hop",
+      "art": "art-3",
+      "read": "5 分钟阅读",
+      "excerpt": "从《无名男子 2》到 Island Boy Hop：万宁新群湾、日月湾实地拍摄，四样企划周边同步上线。海岛即是盛夏，好奇心不会褪色。",
+      "cover": "assets/img/island-boy-hop/cover.jpg",
+      "hero": "assets/img/island-boy-hop/cover.jpg",
+      "hero_pos": "center 60%",
+      "tone": "light",
       "existing": false
     }
   ],
@@ -200,13 +217,6 @@
       }
     ],
     "lifestyle": [
-      {
-        "tag": "Offline",
-        "art": "art-3",
-        "title": "城市瑜伽：把屏幕里的内容，搬到草地上",
-        "excerpt": "沪苏两地的周末场次，每场 20 人，场地方赞助。一次关于线下体验的尝试。",
-        "meta": "即将发布 · 2026.11"
-      },
       {
         "tag": "Open Call",
         "art": "art-2",

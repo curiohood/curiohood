@@ -181,6 +181,23 @@
       "hero_pos": "center 60%",
       "tone": "light",
       "existing": false
+    },
+    {
+      "slug": "rodrigues-island",
+      "title": "比毛里求斯更野，是抵达罗德里格斯岛",
+      "headline": "抵达罗德里格斯岛",
+      "lede": "从毛里求斯再往东 560 公里，1.5 小时航程。罗德里格斯岛，小红书上都寥寥无几的地方——火山、潟湖、银洞，和一座伏在莫鲁克湾的 C Rodrigues。",
+      "column": "city-guide",
+      "date": "2026-10-12",
+      "tag": "Rodrigues",
+      "art": "art-1",
+      "read": "8 分钟阅读",
+      "excerpt": "真正的岛屿玩家早已厌倦滤镜岛。毛里求斯身后 560 公里，罗德里格斯岛：世界保存最完好的海滩、全球十大风筝冲浪地，和一座 65 间房的野奢度假村。",
+      "cover": "assets/img/rodrigues-island/cover.jpg",
+      "hero": "assets/img/rodrigues-island/cover.jpg",
+      "hero_pos": "center 55%",
+      "tone": "light",
+      "existing": false
     }
   ],
   "soon": {
@@ -191,13 +208,6 @@
         "title": "京都的蓝小时：寺庙开门前的那四十分钟",
         "excerpt": "避开人潮的唯一办法，是比旅行团早起两小时。一份清晨寺院巡礼的时刻表。",
         "meta": "即将发布 · 2026.12"
-      },
-      {
-        "tag": "Chiang Mai",
-        "art": "art-4",
-        "title": "清迈的慢小时：在古城里什么都不做的三天",
-        "excerpt": "一间不带电视的客房、五家步行可达的早餐店，和每天下午三点的一场雨。",
-        "meta": "即将发布 · 2027.01"
       }
     ],
     "stay": [],

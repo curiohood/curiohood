@@ -11,7 +11,7 @@ lede: 从毛里求斯再往东 560 公里，1.5 小时航程。罗德里格斯�
 excerpt: 真正的岛屿玩家早已厌倦滤镜岛。毛里求斯身后 560 公里，罗德里格斯岛：世界保存最完好的海滩、全球十大风筝冲浪地，和一座 65 间房的野奢度假村。
 cover: assets/img/rodrigues-island/cover.jpg
 hero: assets/img/rodrigues-island/cover.jpg
-hero_pos: center 55%
+hero_pos: center 62%
 tone: light
 ---
 

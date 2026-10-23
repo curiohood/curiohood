@@ -36,17 +36,55 @@
   },
   "posts": [
     {
-      "slug": "hotel-scent",
-      "title": "酒店的气味记忆：为什么你记得住那间房",
-      "headline": "酒店的气味记忆",
-      "lede": "为什么你记得住那间房。第 1 期安缦，第 2 期朗廷。",
+      "slug": "como-shibori-scarf",
+      "title": "今年节日季，COMO 让包装先成为礼物",
+      "headline": "包装先成为礼物",
+      "lede": "一条 89 厘米见方的手工扎染真丝方巾，包住礼物，拆下来还能围在颈间、系上手袋。利润全部捐给不丹癌症协会。",
+      "column": "lifestyle",
+      "date": "2026-10-22",
+      "tag": "Shop by COMO",
+      "art": "art-2",
+      "read": "6 分钟阅读",
+      "excerpt": "Shop by COMO 节日季限量 Shibori 真丝方巾，巴厘岛手工染色，新币 45。包装第一次比礼物走得更远。",
+      "cover": "assets/img/como-shibori-scarf/cover.jpg",
+      "hero": "assets/img/como-shibori-scarf/cover.jpg",
+      "hero_pos": "center 48%",
+      "carousel_pos": "center 68%",
+      "tone": "dark",
+      "existing": false
+    },
+    {
+      "slug": "rem-macau",
+      "title": "井柏然朱珠同场，REM 想说的不只是酒店",
+      "headline": "在梦里醒着",
+      "lede": "一家酒店的名字，取自你做梦的那段睡眠。澳门新濠天地 REM 幻宇开幕，井柏然、朱珠同场。它押的不是房量，是哪类人。",
+      "column": "stay",
+      "date": "2026-10-21",
+      "tag": "Macau",
+      "art": "art-4",
+      "read": "7 分钟阅读",
+      "excerpt": "空了五年的楼，1.25 亿美元改造，330 间标准房换成 149 间套房。REM 幻宇押的不是房量，是哪类人。",
+      "cover": "assets/img/rem-macau/cover.jpg",
+      "hero": "assets/img/rem-macau/cover.jpg",
+      "hero_pos": "center 30%",
+      "tone": "dark",
+      "existing": false
+    },
+    {
+      "slug": "hotel-fragrance",
+      "title": "酒店香味的秘密：一个气味怎么变成品牌的身份证",
+      "headline": "酒店香味的秘密",
+      "lede": "你记住一间酒店，往往不是因为床，而是推门那三秒的空气。安缦、朗廷、EDITION，三家顶级酒店，三种完全不同的嗅觉策略。",
       "column": "stay",
       "date": "2026-10-08",
       "tag": "Scent Series",
       "art": "art-4",
       "read": "8 分钟阅读",
-      "excerpt": "从安缦的檀香到朗廷的姜花，一家酒店最持久的签名，往往不是大堂，而是味道。",
-      "existing": true
+      "excerpt": "一个味道走遍全球，一个家族各店微调，一朵白花养了二十年。三家顶级酒店怎么用气味给自己签名。",
+      "cover": "assets/img/hotel-fragrance/cover.jpg",
+      "hero": "assets/img/hotel-fragrance/cover.jpg",
+      "hero_pos": "center 42%",
+      "existing": false
     },
     {
       "slug": "bangkok-yellow-hour",
@@ -72,20 +110,11 @@
       "art": "art-3",
       "read": "6 分钟阅读",
       "excerpt": "观海天际舱、毛毛虫帐篷、台风过境后的海崖。一份关于“住得野一点”的实地记录。",
-      "existing": true
-    },
-    {
-      "slug": "mans-holiday",
-      "title": "男子假期：一个产品系列，和它背后的八小时",
-      "headline": "男子假期",
-      "lede": "一个产品系列，和它背后的八小时。三件东西，一次短假，把它做成能带走的。",
-      "column": "lifestyle",
-      "date": "2026-09-12",
-      "tag": "CurioHood Lifestyle",
-      "art": "art-4",
-      "read": "5 分钟阅读",
-      "excerpt": "尼龙托特、万宁 ZINE、UPRO 联名岛黄泳裤。我们把一次短假，做成了可以带走的三件东西。",
-      "existing": true
+      "existing": true,
+      "cover": "assets/img/wanning-tent-season/cover.jpg",
+      "hero": "assets/img/wanning-tent-season/cover.jpg",
+      "hero_pos": "center 18%",
+      "tone": "light"
     },
     {
       "slug": "kimjones",
@@ -99,6 +128,8 @@
       "read": "6 分钟阅读",
       "excerpt": "Kim Jones 把攒了多年的安缦行李牌，做成安缦首个设计师系列。35 件，全解析。",
       "cover": "assets/img/kimjones/cover.jpg",
+      "tone": "dark",
+      "title_color": "#F0EE5A",
       "existing": true
     },
     {
@@ -115,6 +146,23 @@
       "cover": "assets/img/unseen-luxury/cover.jpg",
       "hero": "assets/img/unseen-luxury/cover.jpg",
       "hero_pos": "center 38%",
+      "existing": false
+    },
+    {
+      "slug": "yellow-hour-goods",
+      "title": "Yellow Hour 的生活方式产品：一本 ZINE、一双拖鞋、一套贴纸",
+      "headline": "把曼谷带回家",
+      "lede": "BANGKOK YELLOW HOUR 本来是一条 4 天 5 晚的曼谷路线。现在它变成三样能带回家的东西：一本 ZINE，一双黄色人字拖，一套贴纸。",
+      "column": "lifestyle",
+      "date": "2026-09-20",
+      "tag": "Yellow Hour",
+      "art": "art-1",
+      "read": "6 分钟阅读",
+      "excerpt": "把一条城市路线做成产品：ZINE 装路线，拖鞋装颜色，贴纸装梗。Yellow Hour 的生活方式产品第一次成套亮相。",
+      "cover": "assets/img/yellow-hour-goods/cover.jpg",
+      "hero": "assets/img/yellow-hour-goods/hero.jpg",
+      "hero_pos": "center 50%",
+      "tone": "dark",
       "existing": false
     }
   ],

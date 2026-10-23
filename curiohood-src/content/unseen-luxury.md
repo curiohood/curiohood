@@ -127,6 +127,6 @@ Miraval 只开门给成年人，用瑜伽、冥想、正念，把「哪怕花大
 
 下一期，我们聊聊那些「不被看见」的地方。你想看哪里，评论区点名。
 
-curiohood · Stay Curious
+<p class="signoff">curiohood · Stay Curious</p>
 
 <p style="font-size:13px;color:#8B8578;">事实核对：Virtuoso 数据引自《2026 Travel Week》官方报告及现场发布；Amanvari 位于墨西哥 Baja 东角，Amansanu 位于德州 Hill Country，均据安缦官网；京都嘉佩乐 89 间房、六间温泉房、2026 年 3 月 22 日开业，据品牌新闻稿。</p>

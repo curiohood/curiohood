@@ -2,33 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.curiohoodtravel.com/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.curiohoodtravel.com/city-guide.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.curiohoodtravel.com/stay.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.curiohoodtravel.com/lifestyle.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.curiohoodtravel.com/about.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.curiohoodtravel.com/articles/como-shibori-scarf.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.curiohoodtravel.com/articles/rem-macau.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.curiohoodtravel.com/articles/kimjones.html</loc>
@@ -43,7 +55,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.curiohoodtravel.com/articles/hotel-scent.html</loc>
+    <loc>https://www.curiohoodtravel.com/articles/hotel-fragrance.html</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -61,8 +73,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.curiohoodtravel.com/articles/mans-holiday.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://www.curiohoodtravel.com/articles/yellow-hour-goods.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

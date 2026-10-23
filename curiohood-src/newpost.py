@@ -51,7 +51,7 @@ def nav(p: str = "") -> str:
     return f"""<header class="site-head">
   <div class="head-inner">
     <a class="brand" href="{p}index.html">
-      <span class="brand-mark">CurioHood</span>
+      <img class="brand-logo" src="{p}assets/img/logo.png" alt="CurioHood" width="108" height="26">
       <span class="brand-sub">Travel Media</span>
     </a>
     <button class="nav-toggle" aria-label="菜单" aria-expanded="false">
@@ -73,7 +73,7 @@ def footer(p: str = "") -> str:
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <span class="brand-mark">CurioHood</span>
+        <img class="brand-logo" src="{p}assets/img/logo.png" alt="CurioHood" style="height:30px;width:auto;">
         <p>旅行生活媒体。世界这么大，圈出你的好奇心。</p>
       </div>
       <div class="foot-col">
@@ -315,15 +315,17 @@ def build_home_hero(data: dict) -> None:
         tones.append(tone)
         active = " is-active" if i == 0 else ""
         title = p.get("headline") or p["title"]
+        title_style = f' style="color:{p["title_color"]}"' if p.get("title_color") else ""
         if p.get("cover"):
-            art = f"background:url('{p['cover']}') center 45%/cover no-repeat;"
+            pos = p.get("carousel_pos") or "center 45%"
+            art = f"background:url('{p['cover']}') {pos}/cover no-repeat;"
         else:
             art = f"background:{ART_GRADIENT[p['art']]};"
         parts.append(f"""    <div class="slide{active}" data-tone="{tone}">
       <div class="slide-art" style="{art}"></div>
       <div class="slide-content">
         <span class="slide-kicker">{col['name']} · {p['tag']}</span>
-        <h2 class="slide-title">{title}</h2>
+        <h2 class="slide-title"{title_style}>{title}</h2>
         <p class="slide-sub">{p['lede']}</p>
         <p class="slide-cta"><a class="btn" href="articles/{p['slug']}.html">阅读全文</a></p>
       </div>

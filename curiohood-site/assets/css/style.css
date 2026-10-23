@@ -473,6 +473,13 @@ a { color: inherit; text-decoration: none; }
 .article-body figcaption { margin-top: 11px; font-size: 13px; letter-spacing: .05em; color: var(--ink-soft); }
 .article-body figcaption::before { content: ""; display: inline-block; width: 20px; border-top: 2px solid var(--accent, #B58F1E); vertical-align: middle; margin-right: 10px; }
 
+/* 文末落款 */
+.article-body .signoff {
+  margin: 46px 0 8px; padding-top: 20px; border-top: 1px solid var(--line);
+  font-size: 11.5px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
 .pull-fact {
   background: var(--surface-warm); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 26px 28px; margin: 36px 0;

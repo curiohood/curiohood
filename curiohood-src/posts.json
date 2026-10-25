@@ -198,18 +198,27 @@
       "hero_pos": "center 62%",
       "tone": "light",
       "existing": false
+    },
+    {
+      "slug": "bangkok-48h",
+      "title": "曼谷的48小时：一份双味迷你 CityWalk 指南",
+      "headline": "曼谷的48小时",
+      "lede": "只有 48 小时的曼谷假期，怎么走才不从众？前调是安缦花园的泰式早餐与空中绿洲，后调是麒麟茶馆的中式诡魅、湄南河百年老宅与嵩越路的烟火——一半是绿洲的呼吸，一半是老城的低语。",
+      "column": "city-guide",
+      "date": "2026-10-05",
+      "tag": "Bangkok",
+      "art": "art-1",
+      "read": "8 分钟阅读",
+      "excerpt": "国庆路过曼谷，我们用 48 小时定制了一份双味 CityWalk：安缦同款后花园早餐、1.12 万平米空中花园、麒麟茶馆、200 年中式古董咖啡馆，和 Time Out 评的全球最酷街区。",
+      "cover": "assets/img/bangkok-48h/cover.jpg",
+      "hero": "assets/img/bangkok-48h/cover.jpg",
+      "hero_pos": "center 50%",
+      "tone": "dark",
+      "existing": false
     }
   ],
   "soon": {
-    "city-guide": [
-      {
-        "tag": "Kyoto",
-        "art": "art-2",
-        "title": "京都的蓝小时：寺庙开门前的那四十分钟",
-        "excerpt": "避开人潮的唯一办法，是比旅行团早起两小时。一份清晨寺院巡礼的时刻表。",
-        "meta": "即将发布 · 2026.12"
-      }
-    ],
+    "city-guide": [],
     "stay": [],
     "lifestyle": []
   }

@@ -87,19 +87,6 @@
       "existing": false
     },
     {
-      "slug": "bangkok-yellow-hour",
-      "title": "BANGKOK YELLOW HOUR：4 天 5 晚，走一条不赶时间的路线",
-      "headline": "BANGKOK YELLOW HOUR",
-      "lede": "4 天 5 晚，走一条不赶时间的路线。我们把一天切成五个 hour，只挑光线最好的那一段出门。",
-      "column": "city-guide",
-      "date": "2026-10-02",
-      "tag": "Bangkok",
-      "art": "art-1",
-      "read": "12 分钟阅读",
-      "excerpt": "从 COMO Metropolitan 的中庭开始，到湄南河边的黄昏收尾。五个 hour，一条路线，一本 A5 的纸质 ZINE。",
-      "existing": true
-    },
-    {
       "slug": "wanning-tent-season",
       "title": "万宁海崖帐篷季：睡在风里，听一整夜的浪",
       "headline": "万宁海崖帐篷季",
@@ -215,6 +202,22 @@
       "hero_pos": "center 50%",
       "tone": "dark",
       "existing": false
+    },
+    {
+      "slug": "kyoto-6-things",
+      "title": "用这六件事，去遇见一次京都",
+      "headline": "遇见一次京都",
+      "lede": "三天两夜，六件必做事项：住进一家町屋、泡一次大正末年的温泉、看金阁寺与枯山水、穿和服走进千本鸟居、站在《迷失东京》的三门下，再去高濑川边喝一杯咖啡。京都把千年历史沉淀成了摩登的可爱事物。",
+      "column": "city-guide",
+      "date": "2026-09-25",
+      "tag": "Kyoto",
+      "art": "art-1",
+      "read": "8 分钟阅读",
+      "excerpt": "初次拜访京都的最好方式，是在行程单上列下六件必做事项——町屋、船冈温泉、金阁寺与龙安寺、和服漫游、南禅寺三门、高濑川的咖啡。日本人太会雕琢细节了，京都越沉淀越美。",
+      "existing": false,
+      "cover": "assets/img/kyoto-6-things/cover.jpg",
+      "hero": "assets/img/kyoto-6-things/cover.jpg",
+      "hero_pos": "center 55%"
     }
   ],
   "soon": {

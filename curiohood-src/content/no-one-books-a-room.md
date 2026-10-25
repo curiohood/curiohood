@@ -1,10 +1,10 @@
 ---
-title: 看了几十个酒店账号，问题都是同一个
+title: Mistake｜看了几十个酒店账号，问题都是同一个
 headline: 卖的是酒店，买的是感觉
 slug: no-one-books-a-room
 column: stay
 date: 2026-10-16
-tag: Hotel Marketing
+tag: 酒店误区 Mistake
 art: art-4
 read: 6 分钟阅读
 lede: 九宫格全是对着空间拍：大堂、泳池、浴缸。数据出奇一致——没人想去。因为客人订的从来不是房间，是下班后的逃离，是纪念日的晚餐，是和姐妹偷出来的一下午。房间只是容器，感觉才是商品。

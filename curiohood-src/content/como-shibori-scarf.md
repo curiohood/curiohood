@@ -79,7 +79,7 @@ carousel: false
   <figcaption>Invigorate Bath Essentials，把酒店的浴室带回家里</figcaption>
 </figure>
 
-**心意之选，新币 250 至 600 元（约人民币 1,310 至 3,136 元）**：Pareo & Canvas Tote 是给度假用的，披巾加托特；Shambhala Home Fragrance 则把 Invigorate 的藤条香薰和香氛蜡烛装进同一盒。我们在<a href="bangkok-yellow-hour.html">曼谷那篇</a>里写过 COMO 中庭的味道，这一盒基本就是那个味道的家庭版。
+**心意之选，新币 250 至 600 元（约人民币 1,310 至 3,136 元）**：Pareo & Canvas Tote 是给度假用的，披巾加托特；Shambhala Home Fragrance 则把 Invigorate 的藤条香薰和香氛蜡烛装进同一盒。我们在曼谷住的就是 COMO，写过其中庭的味道，这一盒基本就是那个味道的家庭版。
 
 **珍藏之选，新币 600 元以上（约人民币 3,136 元起）**：羊绒围巾配 Invigorate 蜡烛，或者羊绒真丝围巾配香薰加蜡烛。新加坡还独家有一套 Wellness Travel Ritual，把羊绒真丝围巾、Invigorate 香膏、精油和旅行香氛蜡烛放在一起，是给出差的人准备的。
 

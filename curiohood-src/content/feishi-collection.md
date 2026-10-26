@@ -13,6 +13,7 @@ cover: assets/img/feishi-collection/cover.jpg
 hero: assets/img/feishi-collection/cover.jpg
 hero_pos: center 42%
 tone: light
+carousel: false
 ---
 
 10 月 19 日，重庆渝中，解放碑。绿岩文旅董事长章立尧和万豪国际大中华区奢华品牌地区总经理 Jerry John 在红色签约本上握手，身后背景板写着八个字：华韵匠琢，熠领翡世。

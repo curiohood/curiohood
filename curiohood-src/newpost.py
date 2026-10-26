@@ -306,7 +306,8 @@ def build_home_hero(data: dict) -> None:
         print("  ! 首页缺少 HERO 标记，跳过轮播更新")
         return
 
-    latest = sorted_posts(data)[:3]
+    pool = [p for p in sorted_posts(data) if p.get("carousel", True)]
+    latest = pool[:3]
     parts = []
     tones = []
     for i, p in enumerate(latest):
@@ -424,9 +425,13 @@ def sync_from_md(data: dict) -> dict:
             "existing": False,
         }
         # 图片字段（可选）：cover 用于卡片/首页轮播，hero 用于文章页大图
-        for opt in ("cover", "hero", "hero_pos"):
+        for opt in ("cover", "hero", "hero_pos", "carousel_pos", "title_color", "tone"):
             if meta.get(opt):
                 record[opt] = meta[opt]
+        # 轮播开关（可选）：carousel: false 即不参与首页头条
+        if meta.get("carousel") is not None:
+            val = meta.get("carousel")
+            record["carousel"] = not (val is False or str(val).strip().lower() in ("false", "no", "0"))
         hit = next((p for p in data["posts"] if p["slug"] == slug), None)
         if hit:
             hit.update(record)

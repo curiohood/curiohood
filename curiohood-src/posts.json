@@ -51,7 +51,8 @@
       "hero_pos": "center 48%",
       "carousel_pos": "center 68%",
       "tone": "dark",
-      "existing": false
+      "existing": false,
+      "carousel": false
     },
     {
       "slug": "rem-macau",
@@ -230,7 +231,8 @@
       "existing": false,
       "cover": "assets/img/kyoto-6-things/cover.jpg",
       "hero": "assets/img/kyoto-6-things/cover.jpg",
-      "hero_pos": "center 55%"
+      "hero_pos": "center 55%",
+      "tone": "light"
     },
     {
       "slug": "no-one-books-a-room",
@@ -246,7 +248,8 @@
       "existing": false,
       "cover": "assets/img/no-one-books-a-room/cover.jpg",
       "hero": "assets/img/no-one-books-a-room/cover.jpg",
-      "hero_pos": "center 40%"
+      "hero_pos": "center 40%",
+      "tone": "dark"
     },
     {
       "slug": "bar-camillo",
@@ -262,7 +265,9 @@
       "existing": false,
       "cover": "assets/img/bar-camillo/cover.jpg",
       "hero": "assets/img/bar-camillo/cover.jpg",
-      "hero_pos": "center 28%"
+      "hero_pos": "center 28%",
+      "title_color": "#F0EE5A",
+      "tone": "dark"
     },
     {
       "slug": "feishi-collection",
@@ -278,7 +283,26 @@
       "existing": false,
       "cover": "assets/img/feishi-collection/cover.jpg",
       "hero": "assets/img/feishi-collection/cover.jpg",
-      "hero_pos": "center 42%"
+      "hero_pos": "center 42%",
+      "tone": "light",
+      "carousel": false
+    },
+    {
+      "slug": "fouquets-gstaad",
+      "title": "阿尔卑斯最安静的酒店，只有 33 间卧房",
+      "headline": "整栋楼，33 间卧房",
+      "lede": "巴里耶把 Ultima 的两栋楼翻牌成 Fouquet's Gstaad，12 月 4 日开业。33 间卧房、一栋 1,500 平方米的私宅，产权一寸没卖。",
+      "column": "stay",
+      "date": "2026-10-26",
+      "tag": "Gstaad",
+      "art": "art-2",
+      "read": "8 分钟阅读",
+      "excerpt": "11 间套房、6 间公寓、一栋九卧私宅。业主保留产权与管理团队，只借了一个 127 年的品牌。小不是妥协，小是定价工具。",
+      "existing": false,
+      "cover": "assets/img/fouquets-gstaad/cover.jpg",
+      "hero": "assets/img/fouquets-gstaad/cover.jpg",
+      "hero_pos": "center 55%",
+      "tone": "light"
     }
   ],
   "soon": {

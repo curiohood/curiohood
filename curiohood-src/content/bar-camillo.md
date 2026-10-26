@@ -13,6 +13,7 @@ cover: assets/img/bar-camillo/cover.jpg
 hero: assets/img/bar-camillo/cover.jpg
 hero_pos: center 28%
 tone: dark
+title_color: "#F0EE5A"
 ---
 
 10 月 21 日，香港瑰丽酒店宣布了一件事：请 Bar Leone 的两位创始人 Lorenzo Antinori 和 Justin Shun Wah 进驻，开一间新酒吧，叫 Bar Camillo，11 月 25 日开业。

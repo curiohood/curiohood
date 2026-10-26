@@ -14,6 +14,7 @@ hero: assets/img/como-shibori-scarf/cover.jpg
 hero_pos: center 48%
 carousel_pos: center 68%
 tone: dark
+carousel: false
 ---
 
 每年节日季，最先被浪费的东西是包装。缎带、烫金纸、印着 logo 的盒子，拆开那一刻使命结束，直接进垃圾桶。

@@ -302,7 +302,9 @@
       "cover": "assets/img/fouquets-gstaad/cover.jpg",
       "hero": "assets/img/fouquets-gstaad/cover.jpg",
       "hero_pos": "center 55%",
-      "tone": "light"
+      "tone": "dark",
+      "carousel_pos": "center 62%",
+      "carousel_cover": "assets/img/fouquets-gstaad/pool-wide.jpg"
     }
   ],
   "soon": {

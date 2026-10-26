@@ -318,8 +318,9 @@ def build_home_hero(data: dict) -> None:
         title = p.get("headline") or p["title"]
         title_style = f' style="color:{p["title_color"]}"' if p.get("title_color") else ""
         if p.get("cover"):
+            cimg = p.get("carousel_cover") or p.get("cover")
             pos = p.get("carousel_pos") or "center 45%"
-            art = f"background:url('{p['cover']}') {pos}/cover no-repeat;"
+            art = f"background:url('{cimg}') {pos}/cover no-repeat;"
         else:
             art = f"background:{ART_GRADIENT[p['art']]};"
         parts.append(f"""    <div class="slide{active}" data-tone="{tone}">
@@ -425,7 +426,7 @@ def sync_from_md(data: dict) -> dict:
             "existing": False,
         }
         # 图片字段（可选）：cover 用于卡片/首页轮播，hero 用于文章页大图
-        for opt in ("cover", "hero", "hero_pos", "carousel_pos", "title_color", "tone"):
+        for opt in ("cover", "hero", "hero_pos", "carousel_pos", "title_color", "tone", "carousel_cover"):
             if meta.get(opt):
                 record[opt] = meta[opt]
         # 轮播开关（可选）：carousel: false 即不参与首页头条

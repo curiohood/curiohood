@@ -12,7 +12,9 @@ excerpt: 11 间套房、6 间公寓、一栋九卧私宅。业主保留产权与
 cover: assets/img/fouquets-gstaad/cover.jpg
 hero: assets/img/fouquets-gstaad/cover.jpg
 hero_pos: center 55%
-tone: light
+tone: dark
+carousel_cover: assets/img/fouquets-gstaad/pool-wide.jpg
+carousel_pos: center 62%
 ---
 
 10 月 22 日，瑞士。Ultima Capital 官宣了一笔奇怪的生意：旗下 Gstaad 的两处物业，Ultima Hotel Gstaad 和 Ultima Promenade Gstaad，从 12 月 4 日起改名 Fouquet's Gstaad。

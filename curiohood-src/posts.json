@@ -247,6 +247,38 @@
       "cover": "assets/img/no-one-books-a-room/cover.jpg",
       "hero": "assets/img/no-one-books-a-room/cover.jpg",
       "hero_pos": "center 40%"
+    },
+    {
+      "slug": "bar-camillo",
+      "title": "世界第一酒店，把世界第一酒吧请回了家",
+      "headline": "在家里开派对",
+      "lede": "香港瑰丽请来 Bar Leone 的主理人，在酒店里开了一间不像酒店酒吧的酒吧。11 月 25 日开业，11 月 1 日放订位。",
+      "column": "stay",
+      "date": "2026-10-26",
+      "tag": "Hong Kong",
+      "art": "art-2",
+      "read": "7 分钟阅读",
+      "excerpt": "两个世界第一决定合伙。不是联名下午茶，是一间 50 个座位的意大利客厅，Negroni 推到你桌边现调。",
+      "existing": false,
+      "cover": "assets/img/bar-camillo/cover.jpg",
+      "hero": "assets/img/bar-camillo/cover.jpg",
+      "hero_pos": "center 28%"
+    },
+    {
+      "slug": "feishi-collection",
+      "title": "一个 120 年的品牌，在重庆给自己起了中文名",
+      "headline": "翡世之选",
+      "lede": "The Luxury Collection 在中国大陆启用中文名「翡世之选」，第一个全新规划的项目不在上海，不在北京，在解放碑。改名不是翻译，是重新下注。",
+      "column": "stay",
+      "date": "2026-10-26",
+      "tag": "Chongqing",
+      "art": "art-2",
+      "read": "8 分钟阅读",
+      "excerpt": "120 年的 The Luxury Collection 第一次为中文世界重命名。名字里放着蜀绣、琉璃和漆艺，也放着万豪对中国奢华客群的一次重新判断。",
+      "existing": false,
+      "cover": "assets/img/feishi-collection/cover.jpg",
+      "hero": "assets/img/feishi-collection/cover.jpg",
+      "hero_pos": "center 42%"
     }
   ],
   "soon": {

@@ -343,7 +343,7 @@
       "existing": false,
       "cover": "assets/img/waldorf-kl/cover.jpg",
       "hero": "assets/img/waldorf-kl/cover.jpg",
-      "hero_pos": "center 50%",
+      "hero_pos": "center 42%",
       "tone": "dark",
       "carousel": false
     }

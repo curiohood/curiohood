@@ -11,7 +11,7 @@ lede: 10 月 30 日，吉隆坡华尔道夫启幕。268 间客房，全部是套
 excerpt: 一家城市酒店把"标准房"从房型表里删掉了。全套房不只是慷慨，它同时改写了定价、升级与客群三道算术题。
 cover: assets/img/waldorf-kl/cover.jpg
 hero: assets/img/waldorf-kl/cover.jpg
-hero_pos: center 45%
+hero_pos: center 62%
 tone: dark
 carousel: false
 ---

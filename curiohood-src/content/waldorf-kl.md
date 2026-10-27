@@ -11,7 +11,7 @@ lede: 10 月 30 日，吉隆坡华尔道夫启幕。268 间客房，全部是套
 excerpt: 一家城市酒店把"标准房"从房型表里删掉了。全套房不只是慷慨，它同时改写了定价、升级与客群三道算术题。
 cover: assets/img/waldorf-kl/cover.jpg
 hero: assets/img/waldorf-kl/cover.jpg
-hero_pos: center 42%
+hero_pos: center 45%
 tone: dark
 carousel: false
 ---
@@ -29,8 +29,13 @@ carousel: false
 代价也很清楚。同样的楼板面积，房数更少，单房造价更高，公区与后台要按更高的人均服务强度配置。这要求平均房价必须站得住，也要求客源结构足够稳定。换句话说，全套房不是慷慨，是一次对市场承受力的下注。
 
 <figure class="fig-portrait">
-  <img src="../assets/img/waldorf-kl/sculpture.jpg" alt="大堂壁龛里的木雕">
+  <img src="../assets/img/waldorf-kl/sculpture.jpg" alt="大堂壁龛里的木雕" loading="lazy">
   <figcaption>大堂壁龛里的木雕。顶灯压在纹样上，一道深影，整件东西就立住了。图：Waldorf Astoria Kuala Lumpur</figcaption>
+</figure>
+
+<figure class="fig-portrait">
+  <img src="../assets/img/waldorf-kl/sculpture-detail.jpg" alt="木雕的几何纹样特写" loading="lazy">
+  <figcaption>凑近看，纹样是马来传统的木刻几何。图：Waldorf Astoria Kuala Lumpur</figcaption>
 </figure>
 
 ## 02｜Layan Tetamu：把服务标准交还给本地
@@ -38,6 +43,16 @@ carousel: false
 品牌给出的服务主张是一个马来语词组，Layan Tetamu，直译是"款待客人"。它强调真诚、贴心与个性化，而不是把总部的服务手册翻译一遍。
 
 这句话在东南亚有具体含义。这一带的奢华酒店长期由两套语言主导：国际集团的标准化流程，和本地待客传统里的"过度照顾"。前者可复制，后者不可复制。华尔道夫选后者做卖点，说明它判断这里的客人要的不是"和纽约一样"，而是"只有这里才有"。
+
+<figure class="fig-portrait">
+  <img src="../assets/img/waldorf-kl/corridor.jpg" alt="接待廊道" loading="lazy">
+  <figcaption>接待廊道。木色一层层递进，把到店这件事走成仪式。图：Waldorf Astoria Kuala Lumpur</figcaption>
+</figure>
+
+<figure class="fig-portrait">
+  <img src="../assets/img/waldorf-kl/carta.jpg" alt="carta 酒吧的绿石墙标识" loading="lazy">
+  <figcaption>carta 的立体字钉在绿大理石上，品牌气质全在这块石头里。图：Waldorf Astoria Kuala Lumpur</figcaption>
+</figure>
 
 ## 03｜两位主厨，一间酒店
 
@@ -48,8 +63,18 @@ carousel: false
 两位主厨的分工很有意思：一位负责"这里只能吃到"，一位负责"这里一定好吃"。前者做话题与在地性，后者做稳定性与酒店客的信任。这是当下奢华酒店餐饮最常见的组合拳，也是它区别于独立餐厅的地方，酒店卖的是一整天的动线，早餐、下午茶、晚餐、深夜一杯，需要一个能撑住全时段的厨房。
 
 <figure class="fig-portrait">
-  <img src="../assets/img/waldorf-kl/yaari.jpg" alt="餐厅 Yaari 的迎宾">
+  <img src="../assets/img/waldorf-kl/yaari.jpg" alt="餐厅 Yaari 的迎宾" loading="lazy">
   <figcaption>Yaari 的迎宾。餐厅名字就是墙上那几枚红色立体字，和制服上的橘色是同一套配色。图：Waldorf Astoria Kuala Lumpur</figcaption>
+</figure>
+
+<figure class="fig-portrait">
+  <img src="../assets/img/waldorf-kl/peacock-lounge.jpg" alt="马天尼与绿丝绒" loading="lazy">
+  <figcaption>傍晚的一杯，橄榄沉在杯底，绿丝绒在等下一个客人。图：Waldorf Astoria Kuala Lumpur</figcaption>
+</figure>
+
+<figure class="fig-portrait">
+  <img src="../assets/img/waldorf-kl/cocktails.jpg" alt="粉色鸡尾酒与西瓜特调" loading="lazy">
+  <figcaption>Yaari 的吧台出品：一朵花浮在杯口。图：Waldorf Astoria Kuala Lumpur</figcaption>
 </figure>
 
 ## 04｜为什么是吉隆坡
@@ -59,7 +84,12 @@ carousel: false
 全套房是一个聪明的切口。它不跟曼谷比设计，不跟新加坡比密度，而是直接给出一个"每间房都够大"的承诺。对家庭客与长住客，这是最实际的差异；对商务客，这是最容易被复述的差异。
 
 <figure class="fig-portrait">
-  <img src="../assets/img/waldorf-kl/courtyard.jpg" alt="酒店中庭的草坪">
+  <img src="../assets/img/waldorf-kl/lobby-clock.jpg" alt="大堂的经典座钟" loading="lazy">
+  <figcaption>每个华尔道夫大堂都有一座钟。纽约的祖师爷这样，吉隆坡也这样。图：Waldorf Astoria Kuala Lumpur</figcaption>
+</figure>
+
+<figure class="fig-portrait">
+  <img src="../assets/img/waldorf-kl/courtyard.jpg" alt="酒店中庭的草坪" loading="lazy">
   <figcaption>中庭的草坪。金三角这块地上，酒店留了一个院子，一个人走进去只有影子那么大。图：Waldorf Astoria Kuala Lumpur</figcaption>
 </figure>
 

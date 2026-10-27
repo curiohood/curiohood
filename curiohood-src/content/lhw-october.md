@@ -11,7 +11,7 @@ lede: 立鼎世十月只收了六家新成员，价格从 211 美元到 1,875 �
 excerpt: 同一个联盟，价格差九倍。这一批新成员把"独立"这件事说清楚了：它不是规模上的劣势，而是一个可以横跨价格带的品类。
 cover: assets/img/lhw-october/cover.jpg
 hero: assets/img/lhw-october/cover.jpg
-hero_pos: center 46%
+hero_pos: center 52%
 tone: light
 carousel: false
 ---
@@ -50,6 +50,11 @@ Pemako Punakha 值得单独拆。
 21 顶帐篷别墅，沿 Mo Chhu 河分布，占地 60 英亩（约 24 公顷）森林。客人过一座挂满经幡的桥进入。设计概念出自 Bill Bensley，那位把亚洲度假村做成舞台布景的泰国建筑师，这次收得很克制。
 
 它的产品结构是"帐篷 + 泳池 + 半包 + 灵性行程"。这四个词放在一起，定价就成立了：帐篷是稀缺性，泳池是舒适度，半包是省心，灵性行程是不可替代。你在别处可以订到更好的帐篷，或更好的泳池，但很难同时拿到这四样，还附带一座活的寺院山谷。
+
+<figure>
+  <img src="../assets/img/lhw-october/terraces.jpg" alt="不丹山谷里的梯田与农舍">
+  <figcaption>普纳卡一带的梯田。帐篷散在这种地形里，私密性由山谷自己保证。图：Pexels</figcaption>
+</figure>
 
 1,875 美元一晚，卖的不是床，是"这个地方只有这一种住法"。
 

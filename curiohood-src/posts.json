@@ -307,7 +307,7 @@
       "existing": false,
       "cover": "assets/img/lhw-october/cover.jpg",
       "hero": "assets/img/lhw-october/cover.jpg",
-      "hero_pos": "center 46%",
+      "hero_pos": "center 52%",
       "tone": "light",
       "carousel": false
     },
@@ -325,8 +325,8 @@
       "existing": false,
       "cover": "assets/img/michelin-tianjin/cover.jpg",
       "hero": "assets/img/michelin-tianjin/cover.jpg",
-      "hero_pos": "center 55%",
-      "carousel_pos": "center 58%",
+      "hero_pos": "center 36%",
+      "carousel_pos": "center 36%",
       "tone": "dark"
     },
     {

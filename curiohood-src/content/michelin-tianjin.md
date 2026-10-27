@@ -11,19 +11,14 @@ lede: 10 月 27 日，《2027 北京天津米其林指南》在天津发布。�
 excerpt: 一张榜单合并了两座城市。天津拿到第一本米其林，北京交出独立指南。评审口径区域化的背后，是酒店餐饮继续当摘星主力，也是市井与星级之间那道没被填上的沟。
 cover: assets/img/michelin-tianjin/cover.jpg
 hero: assets/img/michelin-tianjin/cover.jpg
-hero_pos: center 55%
+hero_pos: center 36%
 tone: dark
-carousel_pos: center 58%
+carousel_pos: center 36%
 ---
 
 天津第一次有了米其林指南。这件事比"谁摘了星"更值得写。
 
 10 月 27 日，《2027 北京天津米其林指南》在天津发布。两个变化同时发生：天津首次入榜，北京不再单独出指南。上一版北京榜单收录 32 家星级餐厅，三星 2 家，那份名单曾经是中国北方高端餐饮唯一被国际体系认证的坐标。从这一版起，坐标改成了"京津"。
-
-<figure class="fig-portrait">
-  <img src="../assets/img/michelin-tianjin/historic-building.jpg" alt="海河边的天津历史建筑">
-  <figcaption>海河沿岸的历史建筑。天津的高端餐饮，一半的想象力长在这类老楼里。图：Pexels</figcaption>
-</figure>
 
 ## 01｜合并一本，意味着什么
 
@@ -33,11 +28,6 @@ carousel_pos: center 58%
 
 对读者的影响是具体的：区域册里，一座城市的名额会被另一座稀释。北京的三星不会因为天津加入而变多，天津的一星也不会因为北京在场而更容易。但对天津，从"没有"到"有"，是从零到一的差别。一座城市第一次被纳入国际评审视野，酒店与餐厅的定价逻辑会立刻跟着变。
 
-<figure>
-  <img src="../assets/img/michelin-tianjin/jiefang-bridge.jpg" alt="天津解放桥夜景">
-  <figcaption>解放桥。天津的城市骨架是河与桥，餐饮的分布也跟着水走。图：Pexels</figcaption>
-</figure>
-
 ## 02｜酒店餐厅，仍然是摘星的主力
 
 开榜前，天津本地食客的押注高度一致，方向全落在酒店里：四季与丽思卡尔顿的粤菜。这个判断并不需要内幕，它来自一个反复验证过的规律，国际奢华酒店里的高级粤菜，历来是米其林在中国最稳定的摘星单元。
@@ -46,6 +36,11 @@ carousel_pos: center 58%
 
 对旅行者的实用结论是：在一个新开榜的城市，想吃到最稳的一顿，先看酒店，再看榜单。
 
+<figure class="fig-portrait">
+  <img src="../assets/img/michelin-tianjin/street.jpg" alt="天津街区，红砖老楼与共享单车">
+  <figcaption>天津的街区。老楼与新楼挨着长，餐饮的档次也跟着这条缝分开。图：Pexels</figcaption>
+</figure>
+
 ## 03｜榜单之外，天津的另一套系统
 
 有一个数字比榜单更说明问题。有博主把天津人均 300 元以上的餐厅盘了一遍：总共 70 余家，日料占约 40%，西餐约 20%，天津菜只占约 10%。
@@ -53,6 +48,11 @@ carousel_pos: center 58%
 也就是说，那个早点能卷赢全国的天津，在高端局里几乎没有座位。煎饼馃子、锅巴菜、炸糕、卷圈，全在人均十元的区间里。西北角 200 多家食品商户，日均一两万人次，节假日能到八到十万。清早六点的队形，是这座城市真正的餐饮基础设施。
 
 两套系统并行，互不通信。米其林评的是盘子里的五项：食材品质、技法、风味平衡、个性、多次到访的一致性。它不评一条街的烟火气，也不打算评。所以每次发榜都会出现同一个场景：榜单给出的答案，和本地人心里的答案，不是同一个问题。
+
+<figure class="fig-portrait">
+  <img src="../assets/img/michelin-tianjin/breakfast-stall.jpg" alt="街边的馒头包子早餐铺">
+  <figcaption>一家普通的早餐铺：蒸箱、打包盒、扫码牌。天津人真正每天在吃的东西，在这儿。图：Pexels</figcaption>
+</figure>
 
 ## 04｜怎么用这份榜
 

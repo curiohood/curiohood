@@ -36,6 +36,25 @@
   },
   "posts": [
     {
+      "slug": "edition-capetown",
+      "title": "600 万块砖，砌给所有路过的人",
+      "headline": "600 万块砖，砌给所有路过的人",
+      "lede": "EDITION 第一次进非洲，没有选马拉喀什，也没有选毛里求斯，选了开普敦的老港口。这一次我们拿到的不是新闻稿，是照片：屋顶泳池、砖墙、跑上楼梯的人。看完你会发现，这家酒店最奢侈的部分，恰恰是它让给城市的那一半。",
+      "column": "stay",
+      "date": "2026-10-28",
+      "tag": "Cape Town",
+      "art": "art-2",
+      "read": "8 分钟阅读",
+      "excerpt": "EDITION 第一次进非洲，落在开普敦的老港口。它最值得写的不是奢华，是把最好的一个屋顶角落，让给了不住店的人。",
+      "cover": "assets/img/edition-capetown/cover.jpg",
+      "hero": "assets/img/edition-capetown/cover.jpg",
+      "hero_pos": "center 55%",
+      "carousel_pos": "center 55%",
+      "tone": "dark",
+      "existing": true,
+      "carousel": true
+    },
+    {
       "slug": "como-shibori-scarf",
       "title": "今年节日季，COMO 让包装先成为礼物",
       "headline": "包装先成为礼物",

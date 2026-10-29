@@ -212,6 +212,9 @@ TEMPLATE_ARTICLE = """<!DOCTYPE html>
 </script>
 </head>
 <body>
+<!-- 微信抓缩略图专用：必须是页面里第一张 <img>，且 ≥300×300；
+     页面 logo 只有 108×26，会让微信判定无图、卡片退化成一行网址。 -->
+<img src="{{WX_IMG}}" alt="" aria-hidden="true" style="position:absolute;left:-9999px;top:0;width:600px;height:600px;">
 
 {{NAV}}
 
@@ -376,6 +379,7 @@ def build_column_page(data: dict, key: str) -> None:
 </script>
 </head>
 <body>
+<img src="{data['site']['base']}/assets/img/share/sq/site.jpg" alt="" aria-hidden="true" style="position:absolute;left:-9999px;top:0;width:600px;height:600px;">
 
 {nav()}
 

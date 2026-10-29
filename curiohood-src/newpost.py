@@ -39,6 +39,21 @@ def fill(tpl: str, **kw) -> str:
     return tpl
 
 
+def esc_attr(s: str) -> str:
+    """属性值转义。半角引号会把 content 属性截断，导致微信/搜索只抓到半句。"""
+    return (str(s).replace("&", "&amp;").replace('"', "&quot;")
+            .replace("<", "&lt;").replace(">", "&gt;"))
+
+
+def share_image(post: dict, base: str) -> str:
+    """分享卡片图：assets/img/share/<slug>.jpg（1200×630），没有就退回站点通用图。
+    必须是绝对地址——微信、Facebook、Telegram 都不解析相对路径。"""
+    p = SITE / "assets/img/share" / f"{post['slug']}.jpg"
+    if p.exists():
+        return f"{base}/assets/img/share/{post['slug']}.jpg"
+    return f"{base}/assets/img/share/site.jpg"
+
+
 def load() -> dict:
     return json.loads(DATA.read_text(encoding="utf-8"))
 
@@ -124,11 +139,34 @@ TEMPLATE_ARTICLE = """<!DOCTYPE html>
 <title>{{PAGE_TITLE}}</title>
 <meta name="description" content="{{DESC}}">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="icon" type="image/png" href="../assets/img/logo.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#F6F48F">
 <link rel="canonical" href="{{URL}}">
 <meta property="og:url" content="{{URL}}">
 <meta property="og:title" content="{{OG_TITLE}}">
 <meta property="og:description" content="{{DESC}}">
 <meta property="og:type" content="article">
+<meta property="og:site_name" content="CurioHood">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="og:image:secure_url" content="{{OG_IMAGE}}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{OG_TITLE}}">
+<meta property="article:published_time" content="{{DATE_ISO}}">
+<meta property="article:section" content="{{COLUMN_NAME}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{OG_TITLE}}">
+<meta name="twitter:description" content="{{DESC}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+<meta itemprop="name" content="{{OG_TITLE}}">
+<meta itemprop="description" content="{{DESC}}">
+<meta itemprop="image" content="{{OG_IMAGE}}">
+<meta name="format-detection" content="telephone=no">
 <script type="application/ld+json">
 {{JSONLD}}
 </script>
@@ -153,7 +191,7 @@ TEMPLATE_ARTICLE = """<!DOCTYPE html>
     </div>
 
     <div class="wrap">
-      <div class="article-hero-art" style="{{HERO_STYLE}};"></div>
+{{HERO_BLOCK}}
     </div>
 
     <div class="wrap-narrow article-body">
@@ -204,6 +242,21 @@ def hero_style(post: dict, prefix: str = "") -> str:
     return "background:" + ART_GRADIENT.get(post["art"], ART_GRADIENT["art-1"])
 
 
+def hero_block(post: dict, prefix: str = "") -> str:
+    """文章头图用真实 <img>，不用 CSS 背景图。
+    微信内置浏览器抓缩略图时只认 <img>，背景图一律抓不到，
+    所以这里必须输出真图；object-position 复刻 hero_pos 的裁切。"""
+    hero = post.get("hero") or post.get("cover")
+    if hero:
+        pos = post.get("hero_pos") or "center 42%"
+        alt = esc_attr(post["title"])
+        return (f'      <div class="article-hero-art">\n'
+                f'        <img src="{prefix}{hero}" alt="{alt}" width="1200" height="514"'
+                f' style="object-position:{pos}">\n'
+                f'      </div>')
+    return f'      <div class="article-hero-art" style="{hero_style(post, prefix)};"></div>'
+
+
 def card_art(post: dict, prefix: str = "") -> str:
     """封面图优先；没有图才退回渐变色块。"""
     cover = post.get("cover")
@@ -250,10 +303,27 @@ def build_column_page(data: dict, key: str) -> None:
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{col['name']} · CurioHood</title>
-<meta name="description" content="CurioHood {col['name']}：{col['lede'][:50]}">
+<meta name="description" content="{esc_attr(f"CurioHood {col['name']}：{col['lede'][:50]}")}">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#F6F48F">
 <link rel="canonical" href="{data['site']['base']}/{col['file']}">
 <meta property="og:url" content="{data['site']['base']}/{col['file']}">
+<meta property="og:title" content="{esc_attr(col['title'])} · CurioHood">
+<meta property="og:description" content="{esc_attr(col['lede'][:80])}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CurioHood">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="{data['site']['base']}/assets/img/share/site.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc_attr(col['title'])} · CurioHood">
+<meta name="twitter:description" content="{esc_attr(col['lede'][:80])}">
+<meta name="twitter:image" content="{data['site']['base']}/assets/img/share/site.jpg">
+<meta name="format-detection" content="telephone=no">
 <script type="application/ld+json">
 {{
   "@context": "https://schema.org",
@@ -320,11 +390,13 @@ def build_home_hero(data: dict) -> None:
         if p.get("cover"):
             cimg = p.get("carousel_cover") or p.get("cover")
             pos = p.get("carousel_pos") or "center 45%"
-            art = f"background:url('{cimg}') {pos}/cover no-repeat;"
+            art = (f'<img src="{cimg}" alt="{esc_attr(p.get("headline") or p["title"])}"'
+                   f' style="object-position:{pos}">')
         else:
-            art = f"background:{ART_GRADIENT[p['art']]};"
+            art = ""
+        bg = "" if art else f' style="background:{ART_GRADIENT[p["art"]]};"'
         parts.append(f"""    <div class="slide{active}" data-tone="{tone}">
-      <div class="slide-art" style="{art}"></div>
+      <div class="slide-art"{bg}>{art}</div>
       <div class="slide-content">
         <span class="slide-kicker">{col['name']} · {p['tag']}</span>
         <h2 class="slide-title"{title_style}>{title}</h2>
@@ -470,21 +542,23 @@ def build_article(data: dict, post: dict) -> None:
 
     html = fill(
         TEMPLATE_ARTICLE,
-        PAGE_TITLE=f"{post['title']} · CurioHood",
-        DESC=post["excerpt"],
+        PAGE_TITLE=esc_attr(f"{post['title']} · CurioHood"),
+        DESC=esc_attr(post["excerpt"]),
         URL=url,
-        OG_TITLE=post["title"],
+        OG_TITLE=esc_attr(post["title"]),
+        OG_IMAGE=share_image(post, data["site"]["base"]),
+        DATE_ISO=post["date"],
+        COLUMN_NAME=col["name"],
         JSONLD=jld,
         NAV=nav("../"),
-        KICKER=f"{col['name']} · {post['tag']}",
+        KICKER=esc_attr(f"{col['name']} · {post['tag']}"),
         HEADLINE=post["headline"],
         LEDE=post["lede"],
         AUTHOR=data["site"]["author"],
         DATE=pretty_date(post["date"]),
         READ=post["read"],
-        HERO_STYLE=hero_style(post, "../"),
+        HERO_BLOCK=hero_block(post, "../"),
         BODY=body_html,
-        COLUMN_NAME=col["name"],
         COLUMN_FILE=col["file"],
         RELATED=related,
         FOOTER=footer("../"),

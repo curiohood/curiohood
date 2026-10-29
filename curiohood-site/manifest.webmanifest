@@ -1,0 +1,15 @@
+{
+  "name": "CurioHood · 旅行生活媒体",
+  "short_name": "CurioHood",
+  "description": "世界这么大，圈出你的好奇心。城市指南、酒店观察与纸质 ZINE。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6F48F",
+  "theme_color": "#F6F48F",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "/assets/img/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/assets/img/logo.png", "sizes": "3955x951", "type": "image/png", "purpose": "any" }
+  ]
+}

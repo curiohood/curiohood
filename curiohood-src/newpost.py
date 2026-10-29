@@ -25,6 +25,37 @@ SITE = ROOT.parent / "curiohood-site"
 CONTENT = ROOT / "content"
 DATA = ROOT / "posts.json"
 
+# 微信 JS-SDK 开关。
+# 前提就绪后才置 True：① 公众号后台「JS接口安全域名」已填 www.curiohoodtravel.com
+# ② MP_verify_xxx.txt 已放到站点根目录 ③ Cloudflare 项目的 WX_APPID / WX_SECRET 已配。
+# 置 True 后 rebuild，文章页才会请求 /api/wx-sign 并加载 wx-share.js。
+WX_SHARE_ENABLED = False
+
+WX_LOADER = """<script>
+(function () {
+  if (!/MicroMessenger/i.test(navigator.userAgent)) return;
+  function meta(sel, attr) {
+    var el = document.querySelector(sel);
+    return el ? (el.getAttribute(attr || 'content') || '') : '';
+  }
+  var url = location.href.split('#')[0];
+  fetch('/api/wx-sign?url=' + encodeURIComponent(url))
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (s) {
+      if (!s || !s.signature) return;
+      s.title = meta('meta[property="og:title"]');
+      s.desc = meta('meta[name="description"]');
+      s.imgUrl = meta('meta[name="wx-share-image"]') || meta('meta[property="og:image"]');
+      s.link = meta('link[rel="canonical"]', 'href') || url;
+      window.CURIOHOOD_WX = s;
+      var el = document.createElement('script');
+      el.src = '/assets/js/wx-share.js';
+      document.body.appendChild(el);
+    })
+    .catch(function () {});
+})();
+</script>"""
+
 ART_GRADIENT = {
     "art-1": "linear-gradient(140deg,#F6F48F 0%,#EDEA54 48%,#C9C63C 100%)",
     "art-2": "linear-gradient(140deg,#F1EFE2 0%,#DDDBC8 48%,#B9B7A2 100%)",
@@ -52,6 +83,14 @@ def share_image(post: dict, base: str) -> str:
     if p.exists():
         return f"{base}/assets/img/share/{post['slug']}.jpg"
     return f"{base}/assets/img/share/site.jpg"
+
+
+def wx_image(post: dict, base: str) -> str:
+    """微信 JS-SDK 的 imgUrl：必须是绝对地址、方图（微信按 1:1 裁），建议 ≥500×500。"""
+    p = SITE / "assets/img/share/sq" / f"{post['slug']}.jpg"
+    if p.exists():
+        return f"{base}/assets/img/share/sq/{post['slug']}.jpg"
+    return f"{base}/assets/img/share/sq/site.jpg"
 
 
 def load() -> dict:
@@ -157,6 +196,7 @@ TEMPLATE_ARTICLE = """<!DOCTYPE html>
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{{OG_TITLE}}">
+<meta name="wx-share-image" content="{{WX_IMG}}">
 <meta property="article:published_time" content="{{DATE_ISO}}">
 <meta property="article:section" content="{{COLUMN_NAME}}">
 <meta name="twitter:card" content="summary_large_image">
@@ -224,6 +264,7 @@ TEMPLATE_ARTICLE = """<!DOCTYPE html>
 {{FOOTER}}
 
 <script src="../assets/js/main.js"></script>
+{{WX_BLOCK}}
 </body>
 </html>
 """
@@ -547,6 +588,7 @@ def build_article(data: dict, post: dict) -> None:
         URL=url,
         OG_TITLE=esc_attr(post["title"]),
         OG_IMAGE=share_image(post, data["site"]["base"]),
+        WX_IMG=wx_image(post, data["site"]["base"]),
         DATE_ISO=post["date"],
         COLUMN_NAME=col["name"],
         JSONLD=jld,
@@ -562,6 +604,7 @@ def build_article(data: dict, post: dict) -> None:
         COLUMN_FILE=col["file"],
         RELATED=related,
         FOOTER=footer("../"),
+        WX_BLOCK=WX_LOADER if WX_SHARE_ENABLED else "",
     )
     art_dir = SITE / "articles"
     if not art_dir.exists():

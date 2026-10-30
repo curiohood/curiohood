@@ -13,6 +13,7 @@ cover: assets/img/rem-macau/cover.jpg
 hero: assets/img/rem-macau/cover.jpg
 hero_pos: center 30%
 tone: dark
+carousel_rank: 2
 ---
 
 10 月 20 日晚，澳门路氹。新濠天地的第三座奢华酒店 REM 幻宇开幕，红毯从傍晚直播到深夜。

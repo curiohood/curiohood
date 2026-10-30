@@ -13,6 +13,7 @@ cover: assets/img/michelin-tianjin/cover.jpg
 hero: assets/img/michelin-tianjin/cover.jpg
 hero_pos: center 36%
 tone: dark
+carousel: false
 carousel_pos: center 36%
 ---
 

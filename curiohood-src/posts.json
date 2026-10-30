@@ -52,7 +52,8 @@
       "carousel_pos": "center 55%",
       "tone": "dark",
       "existing": true,
-      "carousel": true
+      "carousel": true,
+      "carousel_rank": "1"
     },
     {
       "slug": "como-shibori-scarf",
@@ -88,7 +89,8 @@
       "hero": "assets/img/rem-macau/cover.jpg",
       "hero_pos": "center 30%",
       "tone": "dark",
-      "existing": false
+      "existing": false,
+      "carousel_rank": "2"
     },
     {
       "slug": "hotel-fragrance",
@@ -346,7 +348,8 @@
       "hero": "assets/img/michelin-tianjin/cover.jpg",
       "hero_pos": "center 36%",
       "carousel_pos": "center 36%",
-      "tone": "dark"
+      "tone": "dark",
+      "carousel": false
     },
     {
       "slug": "waldorf-kl",

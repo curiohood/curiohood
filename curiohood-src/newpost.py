@@ -422,7 +422,10 @@ def build_home_hero(data: dict) -> None:
         return
 
     pool = [p for p in sorted_posts(data) if p.get("carousel", True)]
-    latest = pool[:3]
+    # carousel_rank 支持手动指定轮播位置（1 起）；没填的按日期排在后面
+    pinned = [p for p in pool if str(p.get("carousel_rank", "")).isdigit()]
+    rest = [p for p in pool if not str(p.get("carousel_rank", "")).isdigit()]
+    latest = (sorted(pinned, key=lambda p: int(p["carousel_rank"])) + rest)[:3]
     parts = []
     tones = []
     for i, p in enumerate(latest):
@@ -543,7 +546,7 @@ def sync_from_md(data: dict) -> dict:
             "existing": False,
         }
         # 图片字段（可选）：cover 用于卡片/首页轮播，hero 用于文章页大图
-        for opt in ("cover", "hero", "hero_pos", "carousel_pos", "title_color", "tone", "carousel_cover"):
+        for opt in ("cover", "hero", "hero_pos", "carousel_pos", "title_color", "tone", "carousel_cover", "carousel_rank"):
             if meta.get(opt):
                 record[opt] = meta[opt]
         # 轮播开关（可选）：carousel: false 即不参与首页头条

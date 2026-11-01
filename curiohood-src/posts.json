@@ -368,6 +368,23 @@
       "hero_pos": "center 62%",
       "tone": "dark",
       "carousel": false
+    },
+    {
+      "slug": "patina-tianjin",
+      "title": "天津柏典：17 栋洋楼，改成 143 间房，没有一间重样",
+      "headline": "没有一间重样",
+      "lede": "嘉佩乐旗下的柏典把中国内地第一站放在天津意风区：17 栋百年洋楼，改出 143 间客房及套房。国庆期间先开了咖啡馆和艺术展厅，客房在后面排着队。",
+      "column": "stay",
+      "date": "2026-11-01",
+      "tag": "Tianjin",
+      "art": "art-2",
+      "read": "6 分钟阅读",
+      "excerpt": "标准化酒店的逻辑是复制，历史建筑的逻辑是每栋都不一样。143 间房散在 17 栋洋楼里，格局由建筑决定，施工图没法通用。这是一道昂贵的算术题，也是柏典入华的第一份答卷。",
+      "existing": false,
+      "cover": "assets/img/patina-tianjin/cover.jpg",
+      "hero": "assets/img/patina-tianjin/cover.jpg",
+      "hero_pos": "center 62%",
+      "tone": "dark"
     }
   ],
   "soon": {

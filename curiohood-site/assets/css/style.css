@@ -479,6 +479,13 @@ a { color: inherit; text-decoration: none; }
 .article-body figure img { display: block; width: 100%; height: auto; border-radius: 2px; }
 .article-body figcaption { margin-top: 11px; font-size: 13px; letter-spacing: .05em; color: var(--ink-soft); }
 .article-body figcaption::before { content: ""; display: inline-block; width: 20px; border-top: 2px solid var(--accent, #B58F1E); vertical-align: middle; margin-right: 10px; }
+/* 双图并列：桌面并排，窄屏自动换成上下堆叠 */
+.article-body .fig-row { display: flex; gap: 18px; align-items: flex-start; margin: 36px 0; }
+.article-body .fig-row figure { flex: 1 1 0; margin: 0; }
+.article-body .fig-row figcaption { font-size: 12.5px; }
+@media (max-width: 640px) {
+  .article-body .fig-row { flex-direction: column; gap: 26px; }
+}
 
 /* 文末落款 */
 .article-body .signoff {

@@ -11,7 +11,7 @@ lede: 在定位出现之前，旅行者证明自己去过哪，靠往行李箱�
 excerpt: Hotel Moynat 胶囊系列：老贴纸重新绘制，印在皮革上，一枚枚手缝到 Monogram M 帆布上。有的地名属于品牌历史，有的来自创作者的出身，还有一些并不存在。十一月还有水晶铆钉的第二章。
 cover: assets/img/hotel-moynat/cover.jpg
 hero: assets/img/hotel-moynat/cover.jpg
-hero_pos: center 55%
+hero_pos: center 52%
 tone: light
 ---
 

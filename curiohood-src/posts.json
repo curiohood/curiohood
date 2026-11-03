@@ -109,8 +109,7 @@
       "hero": "assets/img/rem-macau/cover.jpg",
       "hero_pos": "center 30%",
       "tone": "dark",
-      "existing": false,
-      "carousel_rank": "2"
+      "existing": false
     },
     {
       "slug": "hotel-fragrance",
@@ -420,8 +419,9 @@
       "existing": false,
       "cover": "assets/img/hotel-moynat/cover.jpg",
       "hero": "assets/img/hotel-moynat/cover.jpg",
-      "hero_pos": "center 55%",
-      "tone": "light"
+      "hero_pos": "center 52%",
+      "tone": "light",
+      "carousel_rank": "3"
     }
   ],
   "soon": {

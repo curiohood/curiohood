@@ -12,7 +12,9 @@ excerpt: Hotel Moynat 胶囊系列：老贴纸重新绘制，印在皮革上，�
 cover: assets/img/hotel-moynat/cover.jpg
 hero: assets/img/hotel-moynat/cover.jpg
 hero_pos: center 52%
-tone: light
+tone: dark
+title_color: "#F6F48F"
+carousel_rank: 1
 ---
 
 在 Instagram 定位出现之前，旅行者证明自己去过哪，靠的是往行李箱上贴酒店贴纸。贴纸越叠越厚，箱子越旧越体面，那是一个人的旅行履历，贴在箱子表面给所有人看。

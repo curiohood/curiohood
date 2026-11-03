@@ -52,7 +52,7 @@
       "tone": "dark",
       "carousel": true,
       "existing": false,
-      "carousel_rank": "1",
+      "carousel_rank": "2",
       "carousel_pos": "center 45%"
     },
     {
@@ -73,7 +73,7 @@
       "tone": "dark",
       "existing": true,
       "carousel": true,
-      "carousel_rank": "2"
+      "carousel_rank": "3"
     },
     {
       "slug": "como-shibori-scarf",
@@ -420,8 +420,9 @@
       "cover": "assets/img/hotel-moynat/cover.jpg",
       "hero": "assets/img/hotel-moynat/cover.jpg",
       "hero_pos": "center 52%",
-      "tone": "light",
-      "carousel_rank": "3"
+      "tone": "dark",
+      "carousel_rank": "1",
+      "title_color": "#F6F48F"
     }
   ],
   "soon": {

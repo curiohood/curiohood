@@ -36,6 +36,26 @@
   },
   "posts": [
     {
+      "slug": "janu-al-marjan",
+      "title": "安缦的第二个孩子，搬去了赌场隔壁",
+      "headline": "132 间房，73 套房子",
+      "lede": "10 月 29 日，安缦集团公布 Janu Al Marjan Island。哈伊马角，132 间房、73 套住宅、五栋 Marina Villa，2028 年开业。隔壁是永利。",
+      "column": "stay",
+      "date": "2026-11-03",
+      "tag": "Ras Al Khaimah",
+      "art": "art-3",
+      "read": "7 分钟阅读",
+      "excerpt": "安缦卖的是“看不见人”，Janu 卖的是“有人一起吃饭”。海滨第一店放在赌场度假村旁边，酒店顺便成了住宅的配套。",
+      "cover": "assets/img/janu-al-marjan/cover.jpg",
+      "hero": "assets/img/janu-al-marjan/cover.jpg",
+      "hero_pos": "center 45%",
+      "tone": "dark",
+      "carousel": true,
+      "existing": false,
+      "carousel_rank": "1",
+      "carousel_pos": "center 45%"
+    },
+    {
       "slug": "edition-capetown",
       "title": "600 万块砖，砌给所有路过的人",
       "headline": "600 万块砖，砌给所有路过的人",
@@ -53,7 +73,7 @@
       "tone": "dark",
       "existing": true,
       "carousel": true,
-      "carousel_rank": "1"
+      "carousel_rank": "2"
     },
     {
       "slug": "como-shibori-scarf",
@@ -385,6 +405,23 @@
       "hero": "assets/img/patina-tianjin/cover.jpg",
       "hero_pos": "center 62%",
       "tone": "dark"
+    },
+    {
+      "slug": "hotel-moynat",
+      "title": "Moynat 把酒店贴纸，缝成了包",
+      "headline": "贴纸是旧时代的打卡",
+      "lede": "在定位出现之前，旅行者证明自己去过哪，靠往行李箱上贴酒店贴纸。1849 年的巴黎箱包世家 Moynat，和 Bad Bunny 背后的两位创作者，把贴纸改成皮革绣片，一只包上缝了近十枚。",
+      "column": "lifestyle",
+      "date": "2026-11-03",
+      "tag": "Paris",
+      "art": "art-2",
+      "read": "5 分钟阅读",
+      "excerpt": "Hotel Moynat 胶囊系列：老贴纸重新绘制，印在皮革上，一枚枚手缝到 Monogram M 帆布上。有的地名属于品牌历史，有的来自创作者的出身，还有一些并不存在。十一月还有水晶铆钉的第二章。",
+      "existing": false,
+      "cover": "assets/img/hotel-moynat/cover.jpg",
+      "hero": "assets/img/hotel-moynat/cover.jpg",
+      "hero_pos": "center 55%",
+      "tone": "light"
     }
   ],
   "soon": {

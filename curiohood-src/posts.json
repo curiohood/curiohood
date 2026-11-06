@@ -36,6 +36,24 @@
   },
   "posts": [
     {
+      "slug": "fb-to-rbe",
+      "title": "餐厅不是部门，是目的地",
+      "headline": "33 颗米其林星，换了个名字上岗",
+      "lede": "11 月 2 日，文华东方把沿用了几十年的 F&B 改成了 RB&E：餐厅、酒吧与体验。这不是一次部门改名。香港旗舰店翻新后会有 14 个餐饮空间，集团 33 颗米其林星第一次被当成资产整体报数，欧洲与美洲还新设了一位专管这件事的总监。",
+      "column": "stay",
+      "date": "2026-11-04",
+      "tag": "Hong Kong",
+      "art": "art-1",
+      "read": "8 分钟阅读",
+      "excerpt": "从成本中心到业务线，酒店餐饮的考核、对手和账本一起换了。我们把它拆成五件事：改了什么、33 颗星意味着什么、为什么是现在、账本怎么变，以及为什么瑰丽在同一个星期做了同款动作。",
+      "cover": "assets/img/fb-to-rbe/cover.jpg",
+      "hero": "assets/img/fb-to-rbe/cover.jpg",
+      "hero_pos": "center 42%",
+      "tone": "dark",
+      "carousel": true,
+      "existing": false
+    },
+    {
       "slug": "janu-al-marjan",
       "title": "安缦的第二个孩子，搬去了赌场隔壁",
       "headline": "132 间房，73 套房子",
@@ -52,7 +70,7 @@
       "tone": "dark",
       "carousel": true,
       "existing": false,
-      "carousel_rank": "2",
+      "carousel_rank": "3",
       "carousel_pos": "center 45%"
     },
     {
@@ -72,8 +90,7 @@
       "carousel_pos": "center 55%",
       "tone": "dark",
       "existing": true,
-      "carousel": true,
-      "carousel_rank": "3"
+      "carousel": true
     },
     {
       "slug": "como-shibori-scarf",
@@ -421,8 +438,29 @@
       "hero": "assets/img/hotel-moynat/cover.jpg",
       "hero_pos": "center 52%",
       "tone": "dark",
-      "carousel_rank": "1",
-      "title_color": "#F6F48F"
+      "carousel_rank": "2",
+      "title_color": "#F6F48F",
+      "carousel": true
+    },
+    {
+      "slug": "hotel-bar-era",
+      "title": "文华东方淘汰了 F&B，瑰丽开了间小客厅",
+      "headline": "酒店最忙的部门，换成了吧台",
+      "lede": "晚上十一点，大堂安静下来，吧台前坐满了不住店的人。过去一个月，三家顶级酒店集团做了三个方向一致的动作：文华东方把 F&B 这个词淘汰了，香港瑰丽请来世界第一的酒吧团队开了一间 50 座的小客厅，曼谷四季被一间酒吧抬进了全球前三。",
+      "column": "stay",
+      "date": "2026-11-06",
+      "tag": "Hong Kong",
+      "art": "art-1",
+      "read": "7 分钟阅读",
+      "excerpt": "酒店不再把自己当\"住的地方\"经营，开始把自己当一座城市的去处经营。三个动作、一份 2026 榜单，看懂这波以吧台为中心的行业转向，以及写给从业者的四个问题。",
+      "existing": false,
+      "cover": "assets/img/hotel-bar-era/cover.jpg",
+      "hero": "assets/img/hotel-bar-era/cover.jpg",
+      "hero_pos": "center 45%",
+      "carousel_pos": "center 45%",
+      "title_color": "#F0EE5A",
+      "tone": "dark",
+      "carousel_rank": "1"
     }
   ],
   "soon": {

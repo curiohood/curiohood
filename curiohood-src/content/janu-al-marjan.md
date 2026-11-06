@@ -14,7 +14,7 @@ hero: assets/img/janu-al-marjan/cover.jpg
 hero_pos: center 45%
 tone: dark
 carousel: true
-carousel_rank: 2
+carousel_rank: 3
 carousel_pos: center 45%
 ---
 

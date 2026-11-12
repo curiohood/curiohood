@@ -14,7 +14,7 @@ hero: assets/img/hotel-bar-era/cover.jpg
 hero_pos: center 45%
 tone: dark
 title_color: "#F0EE5A"
-carousel_rank: 1
+carousel_rank: 2
 carousel_pos: center 45%
 ---
 

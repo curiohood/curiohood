@@ -69,9 +69,7 @@
       "hero_pos": "center 45%",
       "tone": "dark",
       "carousel": true,
-      "existing": false,
-      "carousel_rank": "3",
-      "carousel_pos": "center 45%"
+      "existing": false
     },
     {
       "slug": "edition-capetown",
@@ -438,7 +436,7 @@
       "hero": "assets/img/hotel-moynat/cover.jpg",
       "hero_pos": "center 52%",
       "tone": "dark",
-      "carousel_rank": "2",
+      "carousel_rank": "3",
       "title_color": "#F6F48F",
       "carousel": true
     },
@@ -460,7 +458,7 @@
       "carousel_pos": "center 45%",
       "title_color": "#F0EE5A",
       "tone": "dark",
-      "carousel_rank": "1"
+      "carousel_rank": "2"
     },
     {
       "slug": "atma-aman",
@@ -477,7 +475,8 @@
       "cover": "assets/img/atma-aman/cover.jpg",
       "hero": "assets/img/atma-aman/cover.jpg",
       "hero_pos": "center 40%",
-      "tone": "dark"
+      "tone": "dark",
+      "carousel_rank": "1"
     }
   ],
   "soon": {

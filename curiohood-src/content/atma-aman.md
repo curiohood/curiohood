@@ -13,6 +13,7 @@ cover: assets/img/atma-aman/cover.jpg
 hero: assets/img/atma-aman/cover.jpg
 hero_pos: center 40%
 tone: dark
+carousel_rank: 1
 ---
 
 安缦这个名字，38 年来和"安静"绑在一起。隐秘的选址、低声的服务、把客人从人群里捞出来。它的母公司 Aman Group 刚刚宣布的事情，方向几乎相反：11 月 10 日，集团官宣了新品牌 ATMA，梵语里意为"灵魂、真我"，定位是超豪华的 performance living，把运动、康体和长寿做成一门正经生意。

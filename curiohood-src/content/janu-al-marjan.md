@@ -14,8 +14,6 @@ hero: assets/img/janu-al-marjan/cover.jpg
 hero_pos: center 45%
 tone: dark
 carousel: true
-carousel_rank: 3
-carousel_pos: center 45%
 ---
 
 10 月 29 日，哈伊马角。安缦集团公布了 Janu 的第一个海滨项目：Al Marjan 岛上，132 间房、73 套住宅、五栋 Marina Villa，2028 年开业。

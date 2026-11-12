@@ -461,6 +461,23 @@
       "title_color": "#F0EE5A",
       "tone": "dark",
       "carousel_rank": "1"
+    },
+    {
+      "slug": "atma-aman",
+      "title": "安缦的下一步，是运动酒店",
+      "headline": "安缦不安静了",
+      "lede": "11 月 10 日，Aman Group 官宣新品牌 ATMA，梵语意为\"灵魂、真我\"，定位超豪华 performance living：球场、实验室、营养学，外加一位新合伙人，24 座大满贯得主德约科维奇。首站迈阿密，2031 年开门。",
+      "column": "stay",
+      "date": "2026-11-12",
+      "tag": "Miami",
+      "art": "art-2",
+      "read": "6 分钟阅读",
+      "excerpt": "安缦卖了 38 年安静，现在母公司 Aman Group 用 ATMA 押注另一件事：让人活得更久、表现得更好。12 万平方英尺的水疗中心、九片球场、六间营养主导餐厅，德约科维奇深度参与课程体系。我们把它拆开讲清楚。",
+      "existing": false,
+      "cover": "assets/img/atma-aman/cover.jpg",
+      "hero": "assets/img/atma-aman/cover.jpg",
+      "hero_pos": "center 40%",
+      "tone": "dark"
     }
   ],
   "soon": {

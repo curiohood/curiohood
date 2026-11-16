@@ -720,10 +720,11 @@ html { overflow-x: clip; }
   white-space: pre-line;
 }
 .wk-col { min-width: 0; }
-.wk-ch-title {
+.weekly .wk-ch-title {
   margin: 0 0 clamp(16px, 1.6vw, 22px);
-  font-size: clamp(26px, 2.8vw, 40px); font-weight: 700;
+  font-size: clamp(28px, 2.9vw, 42px); font-weight: 700;
   line-height: 1.3; letter-spacing: .2px; color: var(--wk-ink);
+  text-wrap: balance;
 }
 .weekly .wk-ch-body { max-width: 42em; }
 .weekly .wk-ch-body p,
@@ -743,12 +744,14 @@ html { overflow-x: clip; }
 }
 .wk-grid.one { grid-template-columns: 1fr; grid-auto-rows: auto; }
 .wk-grid.one img { aspect-ratio: 16 / 9; height: auto; }
-.article-body .wk-grid figure { margin: 0; max-width: none; }
-.wk-grid img {
-  width: 100%; height: 100%; object-fit: cover;
-  border-radius: 14px; display: block;
+.article-body .wk-grid figure { margin: 0; max-width: none; display: grid; grid-template-rows: minmax(0, 1fr) auto; }
+.wk-grid.one figure { display: block; }
+.article-body .wk-grid .ph { position: relative; min-height: 0; }
+.article-body .wk-grid .ph img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; border-radius: 14px; display: block;
 }
-.wk-grid.one img { border-radius: 16px; }
+.wk-grid.one img { width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 16px; }
 .article-body .wk-grid figcaption {
   margin-top: 9px; font-size: 12px; letter-spacing: .04em;
   color: var(--wk-ink3); line-height: 1.6;
@@ -762,7 +765,7 @@ html { overflow-x: clip; }
   border-top: 2px solid var(--wk-ink);
 }
 .wk-outro-kicker { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--wk-ink3); }
-.wk-outro h4 {
+.weekly .wk-outro h4 {
   margin: 16px 0 0; font-size: clamp(30px, 3.6vw, 52px); font-weight: 700;
   line-height: 1.34; letter-spacing: .3px; color: var(--wk-ink);
 }
@@ -782,26 +785,29 @@ html { overflow-x: clip; }
   .wk-mark { letter-spacing: 3px; }
   .wk-ch-no { font-size: 30px; margin-top: 0; }
   .wk-ch-date { margin-top: 0; margin-left: auto; text-align: right; white-space: normal; }
-  .wk-ch-title { margin-top: 16px; }
+  .weekly .wk-ch-title { margin-top: 16px; }
   .wk-grid { grid-auto-rows: clamp(220px, 34vw, 330px); }
 }
 @media (max-width: 640px) {
-  .weekly { padding-inline: 18px; }
+  .weekly { padding-inline: 26px; }
   .wk-mast { flex-direction: column; gap: 8px; padding-bottom: 16px; }
   .wk-window { text-align: left; }
   .wk-row {
     grid-template-columns: 34px minmax(0, 1fr) auto;
     grid-template-rows: auto auto; column-gap: 14px; row-gap: 5px;
   }
-  .wk-no { grid-column: 1; grid-row: 1 / span 2; font-size: 18px; align-self: start; padding-top: 3px; }
+  .wk-no { grid-column: 1; grid-row: 1 / span 2; font-size: 20px; align-self: start; padding-top: 3px; }
   .wk-main { grid-column: 2; grid-row: 1 / span 2; }
-  .wk-title { font-size: 17.5px; }
-  .wk-sub { font-size: 12px; margin-top: 4px; }
+  .wk-title { font-size: 19px; }
+  .wk-sub { font-size: 12.5px; margin-top: 4px; }
   .wk-stat { grid-column: 3; grid-row: 1; }
-  .wk-stat b { font-size: 18px; }
+  .wk-stat b { font-size: 20px; }
   .wk-stat i { font-size: 11.5px; }
-  .wk-date { grid-column: 3; grid-row: 2; font-size: 11px; }
-  .wk-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: clamp(150px, 34vw, 240px); gap: 10px; }
+  .wk-date { grid-column: 3; grid-row: 2; font-size: 11.5px; }
+  .weekly .wk-ch-title { font-size: clamp(30px, 8.4vw, 36px); line-height: 1.32; text-wrap: balance; }
+  .wk-ch-no { font-size: 34px; }
+  .wk-ch-body p { font-size: 16px; }
+  .wk-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: clamp(180px, 46vw, 280px); gap: 12px; }
   .wk-grid img { border-radius: 10px; }
   .wk-ghost { font-size: 130px; bottom: -24px; }
 }

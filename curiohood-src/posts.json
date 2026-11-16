@@ -36,6 +36,25 @@
   },
   "posts": [
     {
+      "slug": "casino-lifestyle-brand",
+      "title": "赌场，为什么要生活方式品牌",
+      "headline": "赌桌在缩，房间在长",
+      "lede": "11 月 13 日，安达仕黄金海岸在星亿的二号塔开门，202 间房，安达仕品牌在澳大利亚的第一家酒店。同一栋园区里的赌场刚刚交出一份年报：博彩收入跌 5.3%，酒店、餐饮与娱乐涨了 5.4%。这个反差解释了生活方式品牌为什么会被请进赌场。",
+      "column": "stay",
+      "date": "2026-11-15",
+      "tag": "Gold Coast",
+      "art": "art-2",
+      "read": "8 分钟阅读",
+      "excerpt": "The Star 的账本里，赌桌在缩、房间在长。安达仕带来的不是品牌光环，是周末的房价、不开赌的客流，和让本地人愿意再来的理由。",
+      "cover": "assets/img/casino-lifestyle-brand/cover.jpg",
+      "hero": "assets/img/casino-lifestyle-brand/cover.jpg",
+      "hero_pos": "center 40%",
+      "tone": "dark",
+      "carousel": true,
+      "existing": false,
+      "carousel_rank": "1"
+    },
+    {
       "slug": "fb-to-rbe",
       "title": "餐厅不是部门，是目的地",
       "headline": "33 颗米其林星，换了个名字上岗",
@@ -436,9 +455,9 @@
       "hero": "assets/img/hotel-moynat/cover.jpg",
       "hero_pos": "center 52%",
       "tone": "dark",
-      "carousel_rank": "3",
       "title_color": "#F6F48F",
-      "carousel": true
+      "carousel": true,
+      "carousel_rank": "3"
     },
     {
       "slug": "hotel-bar-era",
@@ -477,6 +496,24 @@
       "hero_pos": "center 40%",
       "tone": "dark",
       "carousel_rank": "1"
+    },
+    {
+      "slug": "hotel-weekly-vol-001",
+      "title": "酒店周报 Vol.001：这周酒店圈最热的七件事",
+      "headline": "这周酒店圈，最热的七件事",
+      "lede": "从思南公馆的泡芙车，到 250 米的泳池。11 月 9 日到 14 日，七件事拼出同一个方向：酒店不再只卖房间，开始卖一件值得专门去一趟的事。",
+      "column": "stay",
+      "date": "2026-11-16",
+      "tag": "Shanghai",
+      "art": "art-1",
+      "read": "9 分钟阅读",
+      "excerpt": "瑰丽摆摊、丽思卡尔顿的房门挂牌、288 张老糖纸、250 米高空泳池、半岛的短片、亚朵的枕头、万豪的白金。七件事，看懂酒店正在变成什么。",
+      "existing": false,
+      "cover": "assets/img/hotel-weekly-vol-001/cover.jpg",
+      "hero": "assets/img/hotel-weekly-vol-001/cover.jpg",
+      "hero_pos": "center 42%",
+      "tone": "dark",
+      "carousel": false
     }
   ],
   "soon": {

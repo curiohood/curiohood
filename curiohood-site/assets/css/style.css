@@ -743,7 +743,8 @@ html { overflow-x: clip; }
   margin-top: clamp(26px, 2.8vw, 40px);
 }
 .wk-grid.one { grid-template-columns: 1fr; grid-auto-rows: auto; }
-.wk-grid.one img { aspect-ratio: 16 / 9; height: auto; }
+/* 单图槽必须 object-fit:cover，否则竖图会被 16:9 拉扁 */
+.wk-grid.one img { aspect-ratio: 16 / 9; height: auto; object-fit: cover; object-position: center; }
 .article-body .wk-grid figure { margin: 0; max-width: none; display: grid; grid-template-rows: minmax(0, 1fr) auto; }
 .wk-grid.one figure { display: block; }
 .article-body .wk-grid .ph { position: relative; min-height: 0; }
@@ -757,6 +758,28 @@ html { overflow-x: clip; }
   color: var(--wk-ink3); line-height: 1.6;
 }
 .article-body .wk-grid figcaption::before { display: none; }
+
+/* ---- 三图并排（01 节「瑰丽 × 上海艺术周」） ----
+   三张 4:5 竖图，向左扩出悬挂栏，与正文左边缘对齐；
+   object-fit:cover 保证任何比例的源图都不会变形。 */
+.wk-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  gap: clamp(10px, 1.1vw, 16px);
+  margin-left: calc(-1 * (200px + clamp(32px, 4.5vw, 80px)));
+}
+.wk-grid.three figure { margin: 0; max-width: none; display: block; }
+.wk-grid.three .wk-shot {
+  position: relative; overflow: hidden;
+  aspect-ratio: 4 / 5; border-radius: 14px;
+  background: #EFEADF;
+}
+.article-body .wk-grid.three .wk-shot img {
+  position: static; width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block; border-radius: 0;
+}
+.wk-grid.three figcaption { margin-top: 10px; }
 
 /* ---- 尾页 ---- */
 .wk-outro {
@@ -787,6 +810,7 @@ html { overflow-x: clip; }
   .wk-ch-date { margin-top: 0; margin-left: auto; text-align: right; white-space: normal; }
   .weekly .wk-ch-title { margin-top: 16px; }
   .wk-grid { grid-auto-rows: clamp(220px, 34vw, 330px); }
+  .wk-grid.three { margin-left: 0; }   /* 单列布局下不再向左扩 */
 }
 @media (max-width: 640px) {
   .weekly { padding-inline: 26px; }
@@ -809,5 +833,14 @@ html { overflow-x: clip; }
   .wk-ch-body p { font-size: 16px; }
   .wk-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: clamp(180px, 46vw, 280px); gap: 12px; }
   .wk-grid img { border-radius: 10px; }
+  /* 三图并排在窄屏改为横向滑动，保证每张都有可看的尺寸 */
+  .wk-grid.three {
+    display: flex; gap: 10px;
+    overflow-x: auto; scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin-inline: -26px; padding: 0 26px 4px;
+  }
+  .wk-grid.three figure { flex: 0 0 68%; scroll-snap-align: start; }
+  .wk-grid.three .wk-shot { border-radius: 12px; }
   .wk-ghost { font-size: 130px; bottom: -24px; }
 }

@@ -34,7 +34,7 @@ carousel: false
 <h3 class="wk-ch-title">世界第一酒店，来上海摆摊了</h3>
 <div class="wk-ch-body"><p>上海艺术周，瑰丽把思南公馆变成三个场景：香港瑰丽主厨的泡芙车每日限量，三种口味卖完即止；思南书局里挑照片自制封面，真丝布包好带走；入夜到 Bar Leone，六款限定酒单只做两晚。</p>
 <p>不订房，也能逛世界第一酒店。过去要住进去才认识一家酒店，现在在街上买一只泡芙就够了——品牌的第一次接触，从房卡变成了纸袋。</p></div>
-<div class="wk-grid one"><figure><img src="../assets/img/hotel-weekly-vol-001/rosewood-street.jpg" alt="瑰丽泡芙车插画，停在思南公馆老宅前" style="object-position:center 52%" loading="lazy"><figcaption>思南公馆的老墙下面，泡芙车前排着队，队伍里一半人不住酒店。图：Rosewood Hotels</figcaption></figure></div>
+<div class="wk-grid three"><figure><div class="wk-shot"><img src="../assets/img/hotel-weekly-vol-001/artweek-bookshop.jpg" alt="思南书局的影像墙与黄色画册" loading="lazy"></div><figcaption>思南书局里，照片自己挑，封面自己做</figcaption></figure><figure><div class="wk-shot"><img src="../assets/img/hotel-weekly-vol-001/artweek-bartender.jpg" alt="Bar Leone 吧台后的调酒师" loading="lazy"></div><figcaption>Bar Leone 两晚，两地调酒师同台</figcaption></figure><figure><div class="wk-shot"><img src="../assets/img/hotel-weekly-vol-001/artweek-cocktails.jpg" alt="三杯限定鸡尾酒放在黑色桌面上" loading="lazy"></div><figcaption>六款限定酒单，只做两晚</figcaption></figure></div>
 </div>
 </section>
 <section class="wk-ch" id="wk2">
